@@ -1,0 +1,30 @@
+{
+  "name": "crest-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 4350",
+    "prebuild": "node scripts/check-clubs.mjs",
+    "build": "next build",
+    "snapshot": "node scripts/snapshot-clubs.mjs",
+    "icons": "node scripts/make-icons.mjs",
+    "test": "node --test tests/scoring.test.mjs",
+    "report:vectors": "node scripts/report-test-vectors.mjs",
+    "postinstall": "node scripts/copy-fonts.mjs"
+  },
+  "dependencies": {
+    "@fontsource/archivo": "^5.2.5",
+    "@fontsource/bodoni-moda": "^5.2.5",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.110.2",
+    "dotenv": "^16.4.7",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,19 @@
+.rail {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 26px;
+}
+
+.tick {
+  height: 3px;
+  flex: 1;
+  background: var(--edge);
+}
+
+.done {
+  background: var(--navy);
+}
+
+.now {
+  background: var(--red);
+}

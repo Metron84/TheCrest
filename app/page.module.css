@@ -1,0 +1,8 @@
+.main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--pad);
+  padding-top: max(var(--pad), env(safe-area-inset-top));
+  padding-bottom: max(var(--pad), env(safe-area-inset-bottom));
+}
