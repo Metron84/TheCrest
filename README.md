@@ -17,9 +17,24 @@ npm run dev    # http://localhost:4350
 - Refresh from Supabase: `npm run snapshot` (service role in `.env.local`).
 - Enrichment stays in **`trf-project`** (`scripts/crest/enrich-sportmonks.mjs`).
 
-## Deploy
+## Deploy (Vercel)
 
-Static export (`output: 'export'`). Own Vercel project. Suggested host: `crest.thereflectivefootball.com`.
+This app uses Next.js **static export** (`output: 'export'` in `next.config.mjs`).
+
+Create a **new** Vercel project from [github.com/Metron84/TheCrest](https://github.com/Metron84/TheCrest), then use these settings:
+
+| Setting | Value |
+|--------|--------|
+| Framework Preset | **Next.js** (not “Other”) |
+| Root Directory | *(empty)* |
+| Build Command | `npm run build` (default is fine) |
+| Output Directory | **leave empty** (do not set `out`) |
+| Install Command | `npm ci` or default |
+| Production Branch | `main` |
+
+If the dashboard says **No Production Deployment**, open **Deployments** and check the latest build on `main`. A failed build blocks production until it passes. After a green deploy, assign `crest.thereflectivefootball.com` under **Domains**.
+
+`public/clubs.json` is committed, so the build does not need Supabase env vars on Vercel.
 
 ## Scripts
 
