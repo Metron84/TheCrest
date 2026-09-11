@@ -74,6 +74,16 @@
   line-height: 1.1;
 }
 
+.division {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 6px;
+}
+
 .clubName small {
   display: block;
   font-family: var(--font-ui);

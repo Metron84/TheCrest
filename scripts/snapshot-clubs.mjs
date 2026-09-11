@@ -26,7 +26,7 @@ const supabase = createClient(url, key, {
 });
 
 const SELECT =
-  "slug,name,city,country,cluster,vector,confidence,identity_summary,exclusion_clubs,badge_url,archetype,uae,trf_film_youtube_id,research_status";
+  "slug,name,city,country,cluster,tier,competition,vector,confidence,identity_summary,exclusion_clubs,badge_url,archetype,uae,trf_film_youtube_id,research_status";
 
 const { data, error } = await supabase
   .from("crest_clubs")

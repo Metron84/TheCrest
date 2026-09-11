@@ -57,3 +57,37 @@ test("rawFit is perfect for identical vectors", () => {
   const fit = rawFit(club.vector, club, equalPillar, varianceWeights(clubs));
   assert.ok(Math.abs(fit - 1) < 1e-9);
 });
+
+test("Tier B cannot be primary unless it clearly beats the best Tier A", () => {
+  resetVarianceCache();
+  const userVector = Array(12).fill(4);
+  const tierA = {
+    slug: "tier-a-test",
+    name: "Tier A Test",
+    city: "A",
+    country: "X",
+    cluster: "test-a",
+    tier: "A",
+    vector: Array(12).fill(4),
+    confidence: Array(12).fill(3),
+    identity_summary: "Tier A control club.",
+    exclusion_clubs: [],
+    research_status: "draft",
+  };
+  const tierB = {
+    slug: "tier-b-test",
+    name: "Tier B Test",
+    city: "B",
+    country: "X",
+    cluster: "test-b",
+    tier: "B",
+    vector: Array(12).fill(4.3),
+    confidence: Array(12).fill(1),
+    identity_summary: "Tier B club with a slightly closer vector.",
+    exclusion_clubs: [],
+    research_status: "draft",
+  };
+  const result = selectMatches(userVector, [tierA, tierB], equalPillar, []);
+  assert.equal(result.primary.club.slug, "tier-a-test");
+  assert.ok(result.neighbours.some((n) => n.club.slug === "tier-b-test"));
+});

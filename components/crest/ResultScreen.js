@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { selectMatches } from "@/lib/select";
+import { competitionLabel } from "@/lib/tier";
 import { nextStepsForClub } from "@/lib/next-steps";
 import { renderShareCardPng, shareCrestCard } from "@/lib/share-card";
 import Crest from "./Crest";
@@ -142,12 +143,14 @@ export default function ResultScreen({
   );
 }
 
-/** @param {{ match: { club: { name: string; identity_summary?: string }; percent?: number } }} props */
+/** @param {{ match: { club: object; percent?: number } }} props */
 function ClubRow({ match }) {
+  const division = competitionLabel(match.club);
   return (
     <div className={styles.club}>
       <div className={styles.clubName}>
         {match.club.name}
+        {division ? <span className={styles.division}>{division}</span> : null}
         <small>{match.club.identity_summary}</small>
       </div>
       {typeof match.percent === "number" ? (

@@ -17,6 +17,8 @@ const FIELDS = [
   "city",
   "country",
   "cluster",
+  "tier",
+  "competition",
   "vector",
   "confidence",
   "identity_summary",
@@ -34,6 +36,7 @@ const out = raw.map((row) => {
   for (const key of FIELDS) {
     club[key] = row[key] ?? null;
   }
+  if (!club.tier) club.tier = "A";
   return club;
 });
 
