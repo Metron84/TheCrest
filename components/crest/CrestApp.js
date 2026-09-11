@@ -37,12 +37,17 @@ export default function CrestApp({ clubs }) {
 
   const pickerClubs = clubs.map((c) => ({ slug: c.slug, name: c.name }));
 
+  const screenKey = `${state.step}-${state.quizIndex}`;
+
   return (
     <div className={styles.app}>
       {state.step === "start" && (
-        <OpeningScreen onStart={() => dispatch({ type: "START" })} />
+        <div key={screenKey} className={styles.screenEnter}>
+          <OpeningScreen onStart={() => dispatch({ type: "START" })} />
+        </div>
       )}
       {state.step === "owned" && (
+        <div key={screenKey} className={styles.screenEnter}>
         <OwnedClubScreen
           clubs={pickerClubs}
           ownedSlugs={state.ownedSlugs}
@@ -52,8 +57,10 @@ export default function CrestApp({ clubs }) {
           onContinue={() => dispatch({ type: "OWNED_CONTINUE" })}
           onBack={() => dispatch({ type: "BACK" })}
         />
+        </div>
       )}
       {state.step === "quiz" && (
+        <div key={screenKey} className={styles.screenEnter}>
         <QuestionScreen
           quizIndex={state.quizIndex}
           scores={state.scores}
@@ -65,8 +72,10 @@ export default function CrestApp({ clubs }) {
           }
           onBack={() => dispatch({ type: "BACK" })}
         />
+        </div>
       )}
       {state.step === "complete" && state.pillar && state.scores.every((s) => s != null) ? (
+        <div key={screenKey} className={styles.screenEnter}>
         <ResultScreen
           scores={state.scores}
           pillar={state.pillar}
@@ -74,6 +83,7 @@ export default function CrestApp({ clubs }) {
           clubs={clubs}
           onRestart={() => dispatch({ type: "RESTART" })}
         />
+        </div>
       ) : null}
     </div>
   );

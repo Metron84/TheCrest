@@ -9,6 +9,7 @@
   --font-display: "Bodoni Moda", Georgia, serif;
   --font-ui: "Archivo", system-ui, -apple-system, sans-serif;
   --pad: clamp(20px, 5vw, 40px);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)' opacity='0.5'/%3E%3C/svg%3E");
 }
 
 * {
@@ -20,16 +21,47 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  background: var(--cream);
+  background-color: var(--cream);
   color: var(--navy);
   font-family: var(--font-ui);
   font-size: 17px;
   line-height: 1.45;
   overscroll-behavior: none;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+  background-image: var(--grain);
+  background-size: 180px 180px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    ellipse 120% 80% at 50% 0%,
+    rgb(10 17 31 / 0.04),
+    transparent 55%
+  );
+}
+
+::selection {
+  background: var(--red);
+  color: var(--cream);
 }
 
 @media (min-width: 760px) {

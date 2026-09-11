@@ -1,13 +1,27 @@
+.wrap {
+  margin-bottom: 22px;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 10px;
+}
+
 .rail {
   display: flex;
   gap: 4px;
-  margin-bottom: 26px;
 }
 
 .tick {
   height: 3px;
   flex: 1;
   background: var(--edge);
+  border-radius: 1px;
+  transition: background 0.2s ease;
 }
 
 .done {
@@ -16,4 +30,10 @@
 
 .now {
   background: var(--red);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tick {
+    transition: none;
+  }
 }
