@@ -17,6 +17,7 @@ import styles from "./ResultScreen.module.css";
  *   character: { integrity: number; decency: number; respect: number; power: number };
  *   pillar: { Heart: number; Mind: number; Soul: number };
  *   ownedSlugs: string[];
+ *   hatedColor?: string|null;
  *   clubs: object[];
  *   onRestart: () => void;
  * }} props
@@ -26,12 +27,13 @@ export default function ResultScreen({
   character,
   pillar,
   ownedSlugs,
+  hatedColor,
   clubs,
   onRestart,
 }) {
   const result = useMemo(
-    () => selectMatches(scores, clubs, pillar, ownedSlugs),
-    [scores, clubs, pillar, ownedSlugs],
+    () => selectMatches(scores, clubs, pillar, ownedSlugs, hatedColor),
+    [scores, clubs, pillar, ownedSlugs, hatedColor],
   );
 
   const characterReading = useMemo(

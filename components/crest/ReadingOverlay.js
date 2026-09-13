@@ -9,6 +9,7 @@ import styles from "./ReadingOverlay.module.css";
  *   character: object;
  *   pillar: object;
  *   ownedSlugs: string[];
+ *   hatedColor?: string|null;
  *   clubs: object[];
  *   onClose: () => void;
  *   onRestart: () => void;
@@ -19,6 +20,7 @@ export default function ReadingOverlay({
   character,
   pillar,
   ownedSlugs,
+  hatedColor,
   clubs,
   onClose,
   onRestart,
@@ -36,6 +38,7 @@ export default function ReadingOverlay({
           character={character}
           pillar={pillar}
           ownedSlugs={ownedSlugs}
+          hatedColor={hatedColor}
           clubs={clubs}
           onRestart={() => {
             onClose();

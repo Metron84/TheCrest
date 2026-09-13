@@ -91,3 +91,31 @@ test("Tier B cannot be primary unless it clearly beats the best Tier A", () => {
   assert.equal(result.primary.club.slug, "tier-a-test");
   assert.ok(result.neighbours.some((n) => n.club.slug === "tier-b-test"));
 });
+
+test("hated colour hard-vetoes clubs with that kit_family", () => {
+  resetVarianceCache();
+  const red = {
+    slug: "red-test",
+    name: "Red Test",
+    cluster: "test-red",
+    tier: "A",
+    competition: "Serie A",
+    kit_family: "red",
+    vector: Array(12).fill(4),
+    confidence: Array(12).fill(3),
+    identity_summary: "Control red club.",
+    exclusion_clubs: [],
+    research_status: "draft",
+  };
+  const blue = {
+    ...red,
+    slug: "blue-test",
+    name: "Blue Test",
+    cluster: "test-blue",
+    kit_family: "blue",
+    vector: Array(12).fill(3),
+  };
+  const result = selectMatches(red.vector, [red, blue], equalPillar, [], "red");
+  assert.equal(result.primary.club.slug, "blue-test");
+  assert.ok(!result.byCountry.some((row) => row.match.club.slug === "red-test"));
+});

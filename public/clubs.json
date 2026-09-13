@@ -2,7 +2,7 @@
   {
     "slug": "1-fc-heidenheim",
     "name": "1. FC Heidenheim",
-    "city": "Unknown",
+    "city": "Heidenheim an der Brenz",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -44,13 +44,13 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Voith-Arena",
     "skylineVariant": 1
   },
   {
     "slug": "1-fc-kaiserslautern",
     "name": "1. FC Kaiserslautern",
-    "city": "Unknown",
+    "city": "Kaiserslautern",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -92,7 +92,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Fritz Walter Stadium",
     "skylineVariant": 2
   },
   {
@@ -242,7 +242,7 @@
   {
     "slug": "ac-milan",
     "name": "AC Milan",
-    "city": "Unknown",
+    "city": "Milan",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -284,13 +284,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Giuseppe Meazza Stadium",
     "skylineVariant": 3
   },
   {
     "slug": "ad-ceuta-fc",
     "name": "AD Ceuta FC",
-    "city": "Unknown",
+    "city": "Ceuta",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -332,7 +332,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Alfonso Murube",
     "skylineVariant": 3
   },
   {
@@ -380,13 +380,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Dean Court",
     "skylineVariant": 4
   },
   {
     "slug": "afc-wimbledon",
     "name": "AFC Wimbledon",
-    "city": "Unknown",
+    "city": "London Borough of Merton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -428,13 +428,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Plough Lane",
     "skylineVariant": 1
   },
   {
     "slug": "aj-auxerre",
     "name": "AJ Auxerre",
-    "city": "Unknown",
+    "city": "Auxerre",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -476,7 +476,7 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de l'Abbé-Deschamps",
     "skylineVariant": 5
   },
   {
@@ -682,7 +682,7 @@
   {
     "slug": "alaves",
     "name": "Alaves",
-    "city": "Unknown",
+    "city": "Vitoria-Gasteiz",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -724,13 +724,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Mendizorrotza Stadium",
     "skylineVariant": 1
   },
   {
     "slug": "albacete-bp",
     "name": "Albacete BP",
-    "city": "Unknown",
+    "city": "Albacete",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -772,13 +772,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Carlos Belmonte",
     "skylineVariant": 1
   },
   {
     "slug": "angers",
     "name": "Angers",
-    "city": "Unknown",
+    "city": "Angers",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -820,13 +820,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Raymond Kopa",
     "skylineVariant": 5
   },
   {
     "slug": "arminia-bielefeld",
     "name": "Arminia Bielefeld",
-    "city": "Unknown",
+    "city": "Bielefeld",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -868,7 +868,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Bielefelder Alm",
     "skylineVariant": 5
   },
   {
@@ -924,7 +924,7 @@
   {
     "slug": "as-monaco",
     "name": "AS Monaco",
-    "city": "Unknown",
+    "city": "Fontvieille",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -966,13 +966,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Louis II",
     "skylineVariant": 3
   },
   {
     "slug": "as-nancy-lorraine",
     "name": "AS Nancy-Lorraine",
-    "city": "Unknown",
+    "city": "Tomblaine",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -1014,13 +1014,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Marcel Picot",
     "skylineVariant": 6
   },
   {
     "slug": "as-saint-etienne",
     "name": "AS Saint-Etienne",
-    "city": "Unknown",
+    "city": "Saint-Étienne",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -1062,13 +1062,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Geoffroy-Guichard",
     "skylineVariant": 2
   },
   {
     "slug": "ascoli",
     "name": "Ascoli",
-    "city": "Unknown",
+    "city": "Ascoli Piceno",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -1110,7 +1110,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Cino e Lillo Del Duca",
     "skylineVariant": 6
   },
   {
@@ -1164,7 +1164,7 @@
   {
     "slug": "atalanta",
     "name": "Atalanta",
-    "city": "Unknown",
+    "city": "Bergamo",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -1206,65 +1206,17 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Atleti Azzurri d'Italia",
     "skylineVariant": 1
   },
   {
     "slug": "athletic-bilbao",
     "name": "Athletic Bilbao",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "catalan",
+    "city": "Bilbao",
+    "country": "Spain",
+    "cluster": "spain-basque",
     "tier": "B",
     "competition": "LaLiga",
-    "vector": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "confidence": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-    ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
-    "exclusion_clubs": [],
-    "badge_url": null,
-    "archetype": null,
-    "uae": null,
-    "trf_film_youtube_id": null,
-    "research_status": "draft",
-    "primary": "#A50044",
-    "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 1
-  },
-  {
-    "slug": "athletic-club",
-    "name": "Athletic Club",
-    "city": "Bilbao",
-    "country": null,
-    "cluster": "iberia-identity",
-    "tier": "A",
-    "competition": null,
     "vector": [
       5,
       4,
@@ -1280,20 +1232,20 @@
       7
     ],
     "confidence": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ],
-    "identity_summary": "Only Basque players, no exceptions, which makes every season a statement rather than a strategy.",
+    "identity_summary": "Bilbao's Basque-only club: home-grown players, city identity, and a rule that refuses imports.",
     "exclusion_clubs": [
       "real-sociedad"
     ],
@@ -1301,11 +1253,12 @@
     "archetype": null,
     "uae": null,
     "trf_film_youtube_id": null,
-    "research_status": "sample",
-    "primary": "#EE2523",
-    "secondary": "#1b2a4a",
+    "research_status": "draft",
+    "primary": "#A50044",
+    "secondary": "#1a2438",
     "stadiumName": "San Mamés",
-    "skylineVariant": 3
+    "skylineVariant": 1,
+    "kit_family": "red"
   },
   {
     "slug": "atletico-madrid",
@@ -1360,7 +1313,7 @@
   {
     "slug": "avellino",
     "name": "Avellino",
-    "city": "Unknown",
+    "city": "Avellino",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -1402,7 +1355,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Partenio-Adriano Lombardi",
     "skylineVariant": 3
   },
   {
@@ -1459,7 +1412,7 @@
   {
     "slug": "barnsley",
     "name": "Barnsley",
-    "city": "Unknown",
+    "city": "Barnsley",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -1501,13 +1454,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Oakwell",
     "skylineVariant": 1
   },
   {
     "slug": "bayer-leverkusen",
     "name": "Bayer Leverkusen",
-    "city": "Unknown",
+    "city": "Leverkusen",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -1549,7 +1502,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "BayArena",
     "skylineVariant": 5
   },
   {
@@ -1603,7 +1556,7 @@
   {
     "slug": "benevento",
     "name": "Benevento",
-    "city": "Unknown",
+    "city": "Benevento",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -1645,13 +1598,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Ciro Vigorito",
     "skylineVariant": 3
   },
   {
     "slug": "birmingham-city",
     "name": "Birmingham City",
-    "city": "Unknown",
+    "city": "Birmingham",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -1693,7 +1646,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "St Andrew's",
     "skylineVariant": 5
   },
   {
@@ -1747,7 +1700,7 @@
   {
     "slug": "blackpool",
     "name": "Blackpool",
-    "city": "Unknown",
+    "city": "Blackpool",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -1789,13 +1742,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Bloomfield Road",
     "skylineVariant": 6
   },
   {
     "slug": "bologna",
     "name": "Bologna",
-    "city": "Unknown",
+    "city": "Bologna",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -1837,7 +1790,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Renato Dall'Ara",
     "skylineVariant": 1
   },
   {
@@ -2031,7 +1984,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Valley Parade",
     "skylineVariant": 5
   },
   {
@@ -2133,7 +2086,7 @@
   {
     "slug": "bristol-city",
     "name": "Bristol City",
-    "city": "Unknown",
+    "city": "City of Bristol",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2175,13 +2128,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Ashton Gate Stadium",
     "skylineVariant": 4
   },
   {
     "slug": "bromley",
     "name": "Bromley",
-    "city": "Unknown",
+    "city": "Bromley",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2223,13 +2176,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Hayes Lane",
     "skylineVariant": 1
   },
   {
     "slug": "burgos-cf",
     "name": "Burgos CF",
-    "city": "Unknown",
+    "city": "Burgos",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -2271,13 +2224,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio El Plantío",
     "skylineVariant": 3
   },
   {
     "slug": "burnley",
     "name": "Burnley",
-    "city": "Unknown",
+    "city": "Burnley",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2319,13 +2272,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Turf Moor",
     "skylineVariant": 2
   },
   {
     "slug": "burton-albion",
     "name": "Burton Albion",
-    "city": "Unknown",
+    "city": "Burton upon Trent",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2367,7 +2320,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Pirelli Stadium",
     "skylineVariant": 3
   },
   {
@@ -2421,7 +2374,7 @@
   {
     "slug": "cagliari",
     "name": "Cagliari",
-    "city": "Unknown",
+    "city": "Cagliari",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -2463,13 +2416,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Unipol Domus",
     "skylineVariant": 1
   },
   {
     "slug": "calcio-padova",
     "name": "Calcio Padova",
-    "city": "Unknown",
+    "city": "Padua",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -2511,13 +2464,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Euganeo",
     "skylineVariant": 4
   },
   {
     "slug": "cambridge-united",
     "name": "Cambridge United",
-    "city": "Unknown",
+    "city": "Cambridge",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2559,13 +2512,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Abbey Stadium",
     "skylineVariant": 5
   },
   {
     "slug": "cardiff-city",
     "name": "Cardiff City",
-    "city": "Unknown",
+    "city": "Cardiff",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -2607,7 +2560,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Cardiff City Stadium",
     "skylineVariant": 6
   },
   {
@@ -2661,7 +2614,7 @@
   {
     "slug": "catanzaro",
     "name": "Catanzaro",
-    "city": "Unknown",
+    "city": "Catanzaro",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -2703,13 +2656,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Nicola Ceravolo",
     "skylineVariant": 6
   },
   {
     "slug": "cd-castellon",
     "name": "CD Castellon",
-    "city": "Unknown",
+    "city": "Castellón de la Plana",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -2751,13 +2704,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Nou Estadi Castalia",
     "skylineVariant": 6
   },
   {
     "slug": "cd-eldense",
     "name": "CD Eldense",
-    "city": "Unknown",
+    "city": "Elda",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -2799,7 +2752,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Municipal Nuevo Pepico Amat",
     "skylineVariant": 3
   },
   {
@@ -2947,57 +2900,9 @@
     "skylineVariant": 6
   },
   {
-    "slug": "celta-fortuna",
-    "name": "Celta Fortuna",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "catalan",
-    "tier": "B",
-    "competition": "LaLiga 2",
-    "vector": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "confidence": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-    ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
-    "exclusion_clubs": [],
-    "badge_url": null,
-    "archetype": null,
-    "uae": null,
-    "trf_film_youtube_id": null,
-    "research_status": "draft",
-    "primary": "#A50044",
-    "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 6
-  },
-  {
     "slug": "celta-vigo",
     "name": "Celta Vigo",
-    "city": "Unknown",
+    "city": "Vigo",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -3039,7 +2944,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Abanca Balaídos Stadium",
     "skylineVariant": 6
   },
   {
@@ -3095,7 +3000,7 @@
   {
     "slug": "cesena",
     "name": "Cesena",
-    "city": "Unknown",
+    "city": "Cesena",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -3137,13 +3042,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Dino Manuzzi",
     "skylineVariant": 6
   },
   {
     "slug": "charlton-athletic",
     "name": "Charlton Athletic",
-    "city": "Unknown",
+    "city": "Charlton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -3185,7 +3090,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "The Valley",
     "skylineVariant": 3
   },
   {
@@ -3233,13 +3138,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stamford Bridge",
     "skylineVariant": 4
   },
   {
     "slug": "clermont-foot-63",
     "name": "Clermont Foot 63",
-    "city": "Unknown",
+    "city": "Clermont-Ferrand",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -3281,13 +3186,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Gabriel Montpied",
     "skylineVariant": 4
   },
   {
     "slug": "como",
     "name": "Como",
-    "city": "Unknown",
+    "city": "Como",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -3329,13 +3234,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Giuseppe Sinigaglia",
     "skylineVariant": 5
   },
   {
     "slug": "cordoba-cf",
     "name": "Cordoba CF",
-    "city": "Unknown",
+    "city": "Córdoba",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -3377,7 +3282,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Nuevo Arcángel",
     "skylineVariant": 1
   },
   {
@@ -3425,13 +3330,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Coventry Building Society Arena",
     "skylineVariant": 4
   },
   {
     "slug": "cremonese",
     "name": "Cremonese",
-    "city": "Unknown",
+    "city": "Cremona",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -3473,7 +3378,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Giovanni Zini",
     "skylineVariant": 6
   },
   {
@@ -3521,13 +3426,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Selhurst Park",
     "skylineVariant": 4
   },
   {
     "slug": "darmstadt-98",
     "name": "Darmstadt 98",
-    "city": "Unknown",
+    "city": "Darmstadt",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -3569,13 +3474,13 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadion am Böllenfalltor",
     "skylineVariant": 3
   },
   {
     "slug": "deportivo-la-coruna",
     "name": "Deportivo La Coruna",
-    "city": "Unknown",
+    "city": "A Coruña",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -3617,7 +3522,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Municipal de Abanca Riazor",
     "skylineVariant": 4
   },
   {
@@ -3671,7 +3576,7 @@
   {
     "slug": "dijon-fco",
     "name": "Dijon FCO",
-    "city": "Unknown",
+    "city": "Dijon",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -3713,13 +3618,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Gaston Gérard",
     "skylineVariant": 2
   },
   {
     "slug": "doncaster-rovers",
     "name": "Doncaster Rovers",
-    "city": "Unknown",
+    "city": "Doncaster",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -3761,7 +3666,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Keepmoat Stadium",
     "skylineVariant": 2
   },
   {
@@ -3911,7 +3816,7 @@
   {
     "slug": "elche",
     "name": "Elche",
-    "city": "Unknown",
+    "city": "Elche",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -3953,13 +3858,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Manuel Martínez Valero",
     "skylineVariant": 4
   },
   {
     "slug": "empoli",
     "name": "Empoli",
-    "city": "Unknown",
+    "city": "Empoli",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -4001,13 +3906,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Carlo Castellani",
     "skylineVariant": 5
   },
   {
     "slug": "en-avant-guingamp",
     "name": "En Avant Guingamp",
-    "city": "Unknown",
+    "city": "Guingamp",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -4049,7 +3954,7 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de Roudourou",
     "skylineVariant": 2
   },
   {
@@ -4151,7 +4056,7 @@
   {
     "slug": "estac-troyes",
     "name": "ESTAC Troyes",
-    "city": "Unknown",
+    "city": "Troyes",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -4193,7 +4098,7 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de l'Aube",
     "skylineVariant": 4
   },
   {
@@ -4297,7 +4202,7 @@
   {
     "slug": "fc-annecy",
     "name": "FC Annecy",
-    "city": "Unknown",
+    "city": "Annecy",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -4339,7 +4244,7 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Parc des Sports, Annecy",
     "skylineVariant": 5
   },
   {
@@ -4393,7 +4298,7 @@
   {
     "slug": "fc-lorient",
     "name": "FC Lorient",
-    "city": "Unknown",
+    "city": "Lorient",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -4435,7 +4340,7 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade du Moustoir",
     "skylineVariant": 6
   },
   {
@@ -4489,7 +4394,7 @@
   {
     "slug": "fc-nantes",
     "name": "FC Nantes",
-    "city": "Unknown",
+    "city": "Nantes",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -4531,13 +4436,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de la Beaujoire",
     "skylineVariant": 4
   },
   {
     "slug": "fc-sochaux-montbeliard",
     "name": "FC Sochaux-Montbeliard",
-    "city": "Unknown",
+    "city": "Montbéliard",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -4579,13 +4484,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Auguste Bonal",
     "skylineVariant": 2
   },
   {
     "slug": "fiorentina",
     "name": "Fiorentina",
-    "city": "Unknown",
+    "city": "Florence",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -4627,13 +4532,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Artemio Franchi",
     "skylineVariant": 2
   },
   {
     "slug": "frosinone",
     "name": "Frosinone",
-    "city": "Unknown",
+    "city": "Frosinone",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -4675,7 +4580,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Benito Stirpe Stadium",
     "skylineVariant": 2
   },
   {
@@ -4723,13 +4628,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Craven Cottage",
     "skylineVariant": 4
   },
   {
     "slug": "genoa",
     "name": "Genoa",
-    "city": "Unknown",
+    "city": "Genoa",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -4771,13 +4676,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Luigi Ferraris",
     "skylineVariant": 1
   },
   {
     "slug": "getafe",
     "name": "Getafe",
-    "city": "Unknown",
+    "city": "Getafe",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -4819,7 +4724,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Coliseum",
     "skylineVariant": 3
   },
   {
@@ -4873,7 +4778,7 @@
   {
     "slug": "granada-cf",
     "name": "Granada CF",
-    "city": "Unknown",
+    "city": "Granada",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -4915,13 +4820,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Nuevo Los Cármeness",
     "skylineVariant": 1
   },
   {
     "slug": "grenoble-foot-38",
     "name": "Grenoble Foot 38",
-    "city": "Unknown",
+    "city": "Grenoble",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -4963,7 +4868,7 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade des Alpes",
     "skylineVariant": 4
   },
   {
@@ -5017,7 +4922,7 @@
   {
     "slug": "hamburger-sv",
     "name": "Hamburger SV",
-    "city": "Unknown",
+    "city": "Altona",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -5059,7 +4964,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Volksparkstadion",
     "skylineVariant": 6
   },
   {
@@ -5113,7 +5018,7 @@
   {
     "slug": "hellas-verona",
     "name": "Hellas Verona",
-    "city": "Unknown",
+    "city": "Verona",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -5155,7 +5060,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Marcantonio Bentegodi",
     "skylineVariant": 6
   },
   {
@@ -5257,7 +5162,7 @@
   {
     "slug": "huddersfield-town",
     "name": "Huddersfield Town",
-    "city": "Unknown",
+    "city": "Kirklees",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -5299,7 +5204,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Kirklees Stadium",
     "skylineVariant": 1
   },
   {
@@ -5347,47 +5252,49 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "MKM Stadium",
     "skylineVariant": 4
   },
   {
     "slug": "inter-milan",
     "name": "Inter Milan",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "italy-north",
+    "city": "Milan",
+    "country": "Italy",
+    "cluster": "italy-lombardy",
     "tier": "B",
     "competition": "Serie A",
     "vector": [
+      3,
       4,
+      3,
+      3,
+      3,
       4,
+      3,
       4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
+      3,
+      5,
+      3,
       4
     ],
     "confidence": [
+      2,
+      1,
+      2,
+      2,
       1,
       1,
+      2,
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
       1
     ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
-    "exclusion_clubs": [],
+    "identity_summary": "Milan's internationalist club, founded to welcome foreigners. A big club, not a one-idea machine.",
+    "exclusion_clubs": [
+      "ac-milan"
+    ],
     "badge_url": null,
     "archetype": null,
     "uae": null,
@@ -5395,8 +5302,9 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 3
+    "stadiumName": "Giuseppe Meazza Stadium",
+    "skylineVariant": 3,
+    "kit_family": "blue"
   },
   {
     "slug": "ipswich-town",
@@ -5443,13 +5351,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Portman Road",
     "skylineVariant": 4
   },
   {
     "slug": "juve-stabia",
     "name": "Juve Stabia",
-    "city": "Unknown",
+    "city": "Castellammare di Stabia",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -5491,7 +5399,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Romeo Menti",
     "skylineVariant": 4
   },
   {
@@ -5596,7 +5504,7 @@
   {
     "slug": "lazio",
     "name": "Lazio",
-    "city": "Unknown",
+    "city": "Rome",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -5638,13 +5546,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Olimpico",
     "skylineVariant": 4
   },
   {
     "slug": "le-havre",
     "name": "Le Havre",
-    "city": "Unknown",
+    "city": "Le Havre",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -5686,13 +5594,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Océane",
     "skylineVariant": 1
   },
   {
     "slug": "le-mans",
     "name": "Le Mans",
-    "city": "Unknown",
+    "city": "Le Mans",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -5734,13 +5642,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "stade Marie-Marvingt",
     "skylineVariant": 6
   },
   {
     "slug": "lecce",
     "name": "Lecce",
-    "city": "Unknown",
+    "city": "Lecce",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -5782,7 +5690,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Via del Mare",
     "skylineVariant": 5
   },
   {
@@ -5884,7 +5792,7 @@
   {
     "slug": "levante",
     "name": "Levante",
-    "city": "Unknown",
+    "city": "Valencia",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -5926,13 +5834,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadi Ciutat de València",
     "skylineVariant": 6
   },
   {
     "slug": "leyton-orient",
     "name": "Leyton Orient",
-    "city": "Unknown",
+    "city": "Leyton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -5974,13 +5882,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Brisbane Road",
     "skylineVariant": 6
   },
   {
     "slug": "lincoln-city",
     "name": "Lincoln City",
-    "city": "Unknown",
+    "city": "Lincoln",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6022,7 +5930,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Sincil Bank",
     "skylineVariant": 4
   },
   {
@@ -6079,7 +5987,7 @@
   {
     "slug": "losc-lille",
     "name": "LOSC Lille",
-    "city": "Unknown",
+    "city": "Villeneuve-d'Ascq",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -6121,13 +6029,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Pierre Mauroy Stadium",
     "skylineVariant": 1
   },
   {
     "slug": "lr-vicenza",
     "name": "LR Vicenza",
-    "city": "Unknown",
+    "city": "Vicenza",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -6169,13 +6077,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Romeo Menti",
     "skylineVariant": 4
   },
   {
     "slug": "luton-town",
     "name": "Luton Town",
-    "city": "Unknown",
+    "city": "Luton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6217,7 +6125,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Kenilworth Road",
     "skylineVariant": 4
   },
   {
@@ -6271,7 +6179,7 @@
   {
     "slug": "malaga",
     "name": "Malaga",
-    "city": "Unknown",
+    "city": "La Rosaleda",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -6313,7 +6221,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "La Rosaleda Stadium",
     "skylineVariant": 6
   },
   {
@@ -6420,7 +6328,7 @@
   {
     "slug": "mansfield-town",
     "name": "Mansfield Town",
-    "city": "Unknown",
+    "city": "Mansfield",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6462,13 +6370,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Field Mill",
     "skylineVariant": 5
   },
   {
     "slug": "mantova",
     "name": "Mantova",
-    "city": "Unknown",
+    "city": "Mantua",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -6510,7 +6418,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Danilo Martelli",
     "skylineVariant": 1
   },
   {
@@ -6566,7 +6474,7 @@
   {
     "slug": "middlesbrough",
     "name": "Middlesbrough",
-    "city": "Unknown",
+    "city": "Middlesbrough",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6608,7 +6516,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Riverside Stadium",
     "skylineVariant": 6
   },
   {
@@ -6662,7 +6570,7 @@
   {
     "slug": "milton-keynes-dons",
     "name": "Milton Keynes Dons",
-    "city": "Unknown",
+    "city": "Milton Keynes",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6704,13 +6612,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadium MK",
     "skylineVariant": 3
   },
   {
     "slug": "modena",
     "name": "Modena",
-    "city": "Unknown",
+    "city": "Modena",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -6752,13 +6660,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Alberto Braglia",
     "skylineVariant": 5
   },
   {
     "slug": "montpellier-hsc",
     "name": "Montpellier HSC",
-    "city": "Unknown",
+    "city": "Montpellier",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -6800,13 +6708,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de la Mosson",
     "skylineVariant": 5
   },
   {
     "slug": "monza",
     "name": "Monza",
-    "city": "Unknown",
+    "city": "Monza",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -6848,7 +6756,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Brianteo",
     "skylineVariant": 4
   },
   {
@@ -6950,7 +6858,7 @@
   {
     "slug": "norwich-city",
     "name": "Norwich City",
-    "city": "Unknown",
+    "city": "Norwich",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -6992,7 +6900,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Carrow Road",
     "skylineVariant": 5
   },
   {
@@ -7040,13 +6948,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "City Ground",
     "skylineVariant": 4
   },
   {
     "slug": "notts-county",
     "name": "Notts County",
-    "city": "Unknown",
+    "city": "City of Nottingham",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7088,13 +6996,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Meadow Lane",
     "skylineVariant": 2
   },
   {
     "slug": "ogc-nice",
     "name": "OGC Nice",
-    "city": "Unknown",
+    "city": "Nice",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -7136,13 +7044,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Allianz Riviera",
     "skylineVariant": 6
   },
   {
     "slug": "olympique-lyon",
     "name": "Olympique Lyon",
-    "city": "Unknown",
+    "city": "Décines-Charpieu",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -7184,13 +7092,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Parc Olympique Lyonnais",
     "skylineVariant": 5
   },
   {
     "slug": "osasuna",
     "name": "Osasuna",
-    "city": "Unknown",
+    "city": "Pamplona",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -7232,13 +7140,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "El Sadar Stadium",
     "skylineVariant": 5
   },
   {
     "slug": "oxford-united",
     "name": "Oxford United",
-    "city": "Unknown",
+    "city": "Oxford",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7280,13 +7188,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Kassam Stadium",
     "skylineVariant": 5
   },
   {
     "slug": "palermo",
     "name": "Palermo",
-    "city": "Unknown",
+    "city": "Palermo",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -7328,7 +7236,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Renzo Barbera",
     "skylineVariant": 1
   },
   {
@@ -7382,41 +7290,44 @@
   {
     "slug": "paris-saint-germain",
     "name": "Paris Saint-Germain",
-    "city": "Unknown",
-    "country": null,
+    "city": "Paris",
+    "country": "France",
     "cluster": "france-capital",
     "tier": "B",
     "competition": "Ligue 1",
     "vector": [
+      2,
       4,
+      2,
+      3,
+      3,
       4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      2,
+      3,
+      2,
+      3,
+      2,
+      3
     ],
     "confidence": [
+      2,
       1,
+      2,
+      2,
+      2,
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
+      2,
       1
     ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
-    "exclusion_clubs": [],
+    "identity_summary": "Paris's richest club. A modern project built to win, still a city side sold worldwide.",
+    "exclusion_clubs": [
+      "paris-fc",
+      "marseille"
+    ],
     "badge_url": null,
     "archetype": null,
     "uae": null,
@@ -7424,13 +7335,14 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 4
+    "stadiumName": "Parc des Princes",
+    "skylineVariant": 4,
+    "kit_family": "blue"
   },
   {
     "slug": "parma",
     "name": "Parma",
-    "city": "Unknown",
+    "city": "Parma",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -7472,13 +7384,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Ennio Tardini",
     "skylineVariant": 2
   },
   {
     "slug": "pau-fc",
     "name": "Pau FC",
-    "city": "Unknown",
+    "city": "Bizanos",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -7520,13 +7432,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Nouste Camp",
     "skylineVariant": 3
   },
   {
     "slug": "peterborough-united",
     "name": "Peterborough United",
-    "city": "Unknown",
+    "city": "City of Peterborough",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7568,13 +7480,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "London Road Stadium",
     "skylineVariant": 1
   },
   {
     "slug": "pisa",
     "name": "Pisa",
-    "city": "Unknown",
+    "city": "Pisa",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -7616,7 +7528,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Arena Garibaldi – Stadio Romeo Anconetani",
     "skylineVariant": 4
   },
   {
@@ -7670,7 +7582,7 @@
   {
     "slug": "portsmouth",
     "name": "Portsmouth",
-    "city": "Unknown",
+    "city": "Portsmouth",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7712,13 +7624,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Fratton Park",
     "skylineVariant": 6
   },
   {
     "slug": "preston-north-end",
     "name": "Preston North End",
-    "city": "Unknown",
+    "city": "Preston",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7760,13 +7672,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Deepdale",
     "skylineVariant": 4
   },
   {
     "slug": "queens-park-rangers",
     "name": "Queens Park Rangers",
-    "city": "Unknown",
+    "city": "London",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -7808,13 +7720,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Kiyan Prince Foundation Stadium",
     "skylineVariant": 6
   },
   {
     "slug": "racing-santander",
     "name": "Racing Santander",
-    "city": "Unknown",
+    "city": "Santander",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -7856,7 +7768,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Campos de Sport de El Sardinero",
     "skylineVariant": 6
   },
   {
@@ -7910,40 +7822,40 @@
   {
     "slug": "rb-leipzig",
     "name": "RB Leipzig",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "germany-red",
+    "city": "Leipzig",
+    "country": "Germany",
+    "cluster": "germany-east",
     "tier": "B",
     "competition": "Bundesliga",
     "vector": [
+      3,
       4,
       4,
+      3,
+      3,
       4,
       4,
+      3,
       4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
+      2,
+      3,
       4
     ],
     "confidence": [
+      2,
+      1,
+      2,
+      2,
+      2,
       1,
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
       1
     ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
+    "identity_summary": "A 2009 Red Bull project built to reach the top fast, not a century-old civic club.",
     "exclusion_clubs": [],
     "badge_url": null,
     "archetype": null,
@@ -7952,13 +7864,14 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 4
+    "stadiumName": "Red Bull Arena",
+    "skylineVariant": 4,
+    "kit_family": "red"
   },
   {
     "slug": "rc-lens",
     "name": "RC Lens",
-    "city": "Unknown",
+    "city": "Lens",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -8000,13 +7913,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Bollaert-Delelis",
     "skylineVariant": 3
   },
   {
     "slug": "rc-strasbourg",
     "name": "RC Strasbourg",
-    "city": "Unknown",
+    "city": "Strasbourg",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -8048,7 +7961,7 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de la Meinau",
     "skylineVariant": 3
   },
   {
@@ -8102,7 +8015,7 @@
   {
     "slug": "reading",
     "name": "Reading",
-    "city": "Unknown",
+    "city": "Reading",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -8144,13 +8057,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Madejski Stadium",
     "skylineVariant": 5
   },
   {
     "slug": "real-betis",
     "name": "Real Betis",
-    "city": "Unknown",
+    "city": "Seville",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -8192,7 +8105,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Benito Villamarín",
     "skylineVariant": 1
   },
   {
@@ -8343,54 +8256,6 @@
     "skylineVariant": 2
   },
   {
-    "slug": "real-sociedad-b",
-    "name": "Real Sociedad B",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "catalan",
-    "tier": "B",
-    "competition": "LaLiga 2",
-    "vector": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "confidence": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-    ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
-    "exclusion_clubs": [],
-    "badge_url": null,
-    "archetype": null,
-    "uae": null,
-    "trf_film_youtube_id": null,
-    "research_status": "draft",
-    "primary": "#A50044",
-    "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 3
-  },
-  {
     "slug": "real-sporting-gijon",
     "name": "Real Sporting Gijon",
     "city": "Unknown",
@@ -8489,7 +8354,7 @@
   {
     "slug": "red-star-fc",
     "name": "Red Star FC",
-    "city": "Unknown",
+    "city": "Saint-Ouen-sur-Seine",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -8531,13 +8396,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de Paris",
     "skylineVariant": 5
   },
   {
     "slug": "rodez-aveyron",
     "name": "Rodez Aveyron",
-    "city": "Unknown",
+    "city": "Rodez",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -8579,7 +8444,7 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Paul-Lignon",
     "skylineVariant": 4
   },
   {
@@ -8683,7 +8548,7 @@
   {
     "slug": "sassuolo",
     "name": "Sassuolo",
-    "city": "Unknown",
+    "city": "Reggio Emilia",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -8725,7 +8590,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Mapei Stadium - Città del Tricolore",
     "skylineVariant": 4
   },
   {
@@ -8827,7 +8692,7 @@
   {
     "slug": "schalke-04",
     "name": "Schalke 04",
-    "city": "Unknown",
+    "city": "Gelsenkirchen-Nord",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -8869,13 +8734,13 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Arena AufSchalke",
     "skylineVariant": 3
   },
   {
     "slug": "sd-eibar",
     "name": "SD Eibar",
-    "city": "Unknown",
+    "city": "Eibar",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -8917,13 +8782,13 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Ipurúa Municipal Stadium",
     "skylineVariant": 4
   },
   {
     "slug": "sevilla",
     "name": "Sevilla",
-    "city": "Unknown",
+    "city": "Seville",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -8965,7 +8830,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Ramón Sánchez Pizjuán Stadium",
     "skylineVariant": 3
   },
   {
@@ -9019,7 +8884,7 @@
   {
     "slug": "sheffield-wednesday",
     "name": "Sheffield Wednesday",
-    "city": "Unknown",
+    "city": "Owlerton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -9061,13 +8926,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Hillsborough Stadium",
     "skylineVariant": 6
   },
   {
     "slug": "southampton",
     "name": "Southampton",
-    "city": "Unknown",
+    "city": "Southampton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -9109,13 +8974,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "St Mary's Stadium",
     "skylineVariant": 3
   },
   {
     "slug": "ss-arezzo",
     "name": "SS Arezzo",
-    "city": "Unknown",
+    "city": "Arezzo",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -9157,7 +9022,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Città di Arezzo",
     "skylineVariant": 1
   },
   {
@@ -9261,7 +9126,7 @@
   {
     "slug": "stade-de-reims",
     "name": "Stade de Reims",
-    "city": "Unknown",
+    "city": "Reims",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -9303,13 +9168,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Auguste Delaune",
     "skylineVariant": 1
   },
   {
     "slug": "stade-lavallois",
     "name": "Stade Lavallois",
-    "city": "Unknown",
+    "city": "Laval",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -9351,13 +9216,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Francis Le Basser",
     "skylineVariant": 6
   },
   {
     "slug": "stade-rennais",
     "name": "Stade Rennais",
-    "city": "Unknown",
+    "city": "Rennes",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -9399,13 +9264,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Roazhon Park",
     "skylineVariant": 1
   },
   {
     "slug": "stevenage",
     "name": "Stevenage",
-    "city": "Unknown",
+    "city": "Stevenage",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -9447,13 +9312,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Broadhall Way",
     "skylineVariant": 3
   },
   {
     "slug": "stockport-county",
     "name": "Stockport County",
-    "city": "Unknown",
+    "city": "Stockport",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -9495,13 +9360,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Edgeley Park",
     "skylineVariant": 5
   },
   {
     "slug": "stoke-city",
     "name": "Stoke City",
-    "city": "Unknown",
+    "city": "City of Stoke-on-Trent",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -9543,13 +9408,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Britannia Stadium",
     "skylineVariant": 5
   },
   {
     "slug": "sudtirol",
     "name": "Sudtirol",
-    "city": "Unknown",
+    "city": "Bolzano",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -9591,7 +9456,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Druso",
     "skylineVariant": 3
   },
   {
@@ -9639,13 +9504,13 @@
     "research_status": "draft",
     "primary": "#0A111F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadium of Light",
     "skylineVariant": 4
   },
   {
     "slug": "sv-elversberg",
     "name": "SV Elversberg",
-    "city": "Unknown",
+    "city": "Spiesen-Elversberg",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -9687,7 +9552,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Waldstadion an der Kaiserlinde",
     "skylineVariant": 6
   },
   {
@@ -9741,7 +9606,7 @@
   {
     "slug": "torino",
     "name": "Torino",
-    "city": "Unknown",
+    "city": "Turin",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -9783,7 +9648,7 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Olimpico Grande Torino",
     "skylineVariant": 2
   },
   {
@@ -9839,7 +9704,7 @@
   {
     "slug": "toulouse-fc",
     "name": "Toulouse FC",
-    "city": "Unknown",
+    "city": "Toulouse",
     "country": null,
     "cluster": "france-capital",
     "tier": "B",
@@ -9881,13 +9746,13 @@
     "research_status": "draft",
     "primary": "#004170",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadium Municipal",
     "skylineVariant": 5
   },
   {
     "slug": "tsg-hoffenheim",
     "name": "TSG Hoffenheim",
-    "city": "Unknown",
+    "city": "Sinsheim",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -9929,13 +9794,13 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "SNP Arena",
     "skylineVariant": 3
   },
   {
     "slug": "ud-almeria",
     "name": "UD Almeria",
-    "city": "Unknown",
+    "city": "Almería",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -9977,7 +9842,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio Municipal Juan Rojas",
     "skylineVariant": 6
   },
   {
@@ -10079,40 +9944,40 @@
   {
     "slug": "union-berlin",
     "name": "Union Berlin",
-    "city": "Unknown",
-    "country": null,
-    "cluster": "germany-red",
+    "city": "Berlin",
+    "country": "Germany",
+    "cluster": "germany-east",
     "tier": "B",
     "competition": "Bundesliga",
     "vector": [
+      5,
+      4,
+      5,
+      6,
       4,
       4,
       4,
       4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      6,
+      5,
+      6,
+      6
     ],
     "confidence": [
+      2,
+      1,
+      2,
+      2,
       1,
       1,
       1,
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      2,
+      2,
+      2,
+      2
     ],
-    "identity_summary": "SAMPLE placeholder. Cultural identity not yet scored for this club. Matching uses a neutral estimate only.",
+    "identity_summary": "Eisern Union. An East Berlin club defined by its support more than by a playing idea.",
     "exclusion_clubs": [],
     "badge_url": null,
     "archetype": null,
@@ -10121,13 +9986,14 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
-    "skylineVariant": 5
+    "stadiumName": "Stadion An der Alten Försterei",
+    "skylineVariant": 5,
+    "kit_family": "red"
   },
   {
     "slug": "us-boulogne-cote-d-opale",
     "name": "US Boulogne Cote d'Opale",
-    "city": "Unknown",
+    "city": "Boulogne-sur-Mer",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -10169,13 +10035,13 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade de la Libération",
     "skylineVariant": 2
   },
   {
     "slug": "usl-dunkerque",
     "name": "USL Dunkerque",
-    "city": "Unknown",
+    "city": "Dunkirk",
     "country": null,
     "cluster": "france-south",
     "tier": "B",
@@ -10217,7 +10083,7 @@
     "research_status": "draft",
     "primary": "#2FAEE0",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stade Marcel Tribut",
     "skylineVariant": 4
   },
   {
@@ -10271,7 +10137,7 @@
   {
     "slug": "venezia",
     "name": "Venezia",
-    "city": "Unknown",
+    "city": "Venice",
     "country": null,
     "cluster": "italy-north",
     "tier": "B",
@@ -10313,13 +10179,13 @@
     "research_status": "draft",
     "primary": "#AC975F",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Stadio Pierluigi Penzo",
     "skylineVariant": 1
   },
   {
     "slug": "vfb-stuttgart",
     "name": "VfB Stuttgart",
-    "city": "Unknown",
+    "city": "Bad Cannstatt",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -10361,7 +10227,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "MHPArena",
     "skylineVariant": 6
   },
   {
@@ -10511,7 +10377,7 @@
   {
     "slug": "villarreal",
     "name": "Villarreal",
-    "city": "Unknown",
+    "city": "Villarreal",
     "country": null,
     "cluster": "catalan",
     "tier": "B",
@@ -10553,7 +10419,7 @@
     "research_status": "draft",
     "primary": "#A50044",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Estadio de la Cerámica",
     "skylineVariant": 1
   },
   {
@@ -10607,7 +10473,7 @@
   {
     "slug": "watford",
     "name": "Watford",
-    "city": "Unknown",
+    "city": "Watford",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -10649,13 +10515,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Vicarage Road",
     "skylineVariant": 6
   },
   {
     "slug": "werder-bremen",
     "name": "Werder Bremen",
-    "city": "Unknown",
+    "city": "Östliche Vorstadt",
     "country": null,
     "cluster": "germany-red",
     "tier": "B",
@@ -10697,7 +10563,7 @@
     "research_status": "draft",
     "primary": "#DC052D",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Weserstadion",
     "skylineVariant": 2
   },
   {
@@ -10751,7 +10617,7 @@
   {
     "slug": "west-ham-united",
     "name": "West Ham United",
-    "city": "Unknown",
+    "city": "Stratford",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -10793,7 +10659,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "London Stadium",
     "skylineVariant": 1
   },
   {
@@ -10847,7 +10713,7 @@
   {
     "slug": "wolverhampton-wanderers",
     "name": "Wolverhampton Wanderers",
-    "city": "Unknown",
+    "city": "Wolverhampton",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -10889,7 +10755,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Molineux Stadium",
     "skylineVariant": 5
   },
   {
@@ -10937,13 +10803,13 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Racecourse Ground",
     "skylineVariant": 5
   },
   {
     "slug": "wycombe-wanderers",
     "name": "Wycombe Wanderers",
-    "city": "Unknown",
+    "city": "High Wycombe",
     "country": null,
     "cluster": "midlands",
     "tier": "B",
@@ -10985,7 +10851,7 @@
     "research_status": "draft",
     "primary": "#95BFE5",
     "secondary": "#1a2438",
-    "stadiumName": "Home ground",
+    "stadiumName": "Adams Park",
     "skylineVariant": 1
   },
   {

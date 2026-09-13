@@ -97,7 +97,7 @@ export default function CrestApp({ clubs }) {
 
   const provisional = useMemo(
     () => provisionalDestination(state, clubs),
-    [state.scores, state.pillar, state.ownedSlugs, clubs],
+    [state.scores, state.pillar, state.ownedSlugs, state.hatedColor, clubs],
   );
 
   const finalResult = useMemo(() => {
@@ -107,8 +107,16 @@ export default function CrestApp({ clubs }) {
       clubs,
       state.pillar,
       state.ownedSlugs,
+      state.hatedColor,
     );
-  }, [quizComplete, state.scores, state.pillar, state.ownedSlugs, clubs]);
+  }, [
+    quizComplete,
+    state.scores,
+    state.pillar,
+    state.ownedSlugs,
+    state.hatedColor,
+    clubs,
+  ]);
 
   const finalClub = finalResult?.primary?.club ?? null;
 
@@ -223,6 +231,7 @@ export default function CrestApp({ clubs }) {
           character={state.character}
           pillar={state.pillar}
           ownedSlugs={state.ownedSlugs}
+          hatedColor={state.hatedColor}
           clubs={clubs}
           onClose={() => setReadingOpen(false)}
           onRestart={handleRestart}
@@ -254,6 +263,7 @@ export default function CrestApp({ clubs }) {
                   quizIndex={state.quizIndex}
                   scores={state.scores}
                   character={state.character}
+                  hatedColor={state.hatedColor}
                   onAnswerDimension={(index, value) =>
                     dispatch({
                       type: "ANSWER_DIMENSION",
@@ -268,6 +278,9 @@ export default function CrestApp({ clubs }) {
                   }
                   onAnswerPillar={(w) =>
                     dispatch({ type: "ANSWER_PILLAR", payload: w })
+                  }
+                  onAnswerColor={(color) =>
+                    dispatch({ type: "ANSWER_COLOR", payload: color })
                   }
                   onBack={() => dispatch({ type: "BACK" })}
                   journey
