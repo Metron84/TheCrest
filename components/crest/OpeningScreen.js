@@ -30,8 +30,8 @@ export default function OpeningScreen({ onStart }) {
       </Reveal>
       <Reveal delay={180}>
         <p className={styles.note}>
-          Twelve questions. No typing, no right answers. Built by The Reflective
-          Football.
+          Twelve on what draws you. Four on how you act when it is tested. One on
+          balance. No typing, no right answers.
         </p>
       </Reveal>
       <Reveal delay={260}>

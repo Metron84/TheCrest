@@ -26,7 +26,7 @@ const supabase = createClient(url, key, {
 });
 
 const SELECT =
-  "slug,name,city,country,cluster,tier,competition,vector,confidence,identity_summary,exclusion_clubs,badge_url,archetype,uae,trf_film_youtube_id,research_status";
+  'slug,name,city,country,cluster,tier,competition,vector,confidence,identity_summary,exclusion_clubs,badge_url,archetype,uae,trf_film_youtube_id,research_status,primary,secondary,stadium_name,skyline_variant';
 
 const { data, error } = await supabase
   .from("crest_clubs")
@@ -44,5 +44,14 @@ if (!data?.length) {
 }
 
 const dest = join(process.cwd(), "public/clubs.json");
-writeFileSync(dest, `${JSON.stringify(data, null, 2)}\n`);
-console.log(`Snapshot: ${data.length} clubs → ${dest}`);
+const clubs = data.map((row) => {
+  const { stadium_name, skyline_variant, ...rest } = row;
+  return {
+    ...rest,
+    stadiumName: stadium_name ?? null,
+    skylineVariant: skyline_variant ?? null,
+  };
+});
+writeFileSync(dest, `${JSON.stringify(clubs, null, 2)}\n`);
+console.log(`Snapshot: ${clubs.length} clubs → ${dest}`);
+console.log("Run: node scripts/enrich-club-ground.mjs if ground fields need presets.");

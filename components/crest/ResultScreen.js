@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { characterNarrative } from "@/lib/character-narrative";
 import { selectMatches } from "@/lib/select";
 import { competitionLabel, describeMatchClub } from "@/lib/tier";
 import { nextStepsForClub } from "@/lib/next-steps";
@@ -13,6 +14,7 @@ import styles from "./ResultScreen.module.css";
 /**
  * @param {{
  *   scores: number[];
+ *   character: { integrity: number; decency: number; respect: number; power: number };
  *   pillar: { Heart: number; Mind: number; Soul: number };
  *   ownedSlugs: string[];
  *   clubs: object[];
@@ -21,6 +23,7 @@ import styles from "./ResultScreen.module.css";
  */
 export default function ResultScreen({
   scores,
+  character,
   pillar,
   ownedSlugs,
   clubs,
@@ -29,6 +32,11 @@ export default function ResultScreen({
   const result = useMemo(
     () => selectMatches(scores, clubs, pillar, ownedSlugs),
     [scores, clubs, pillar, ownedSlugs],
+  );
+
+  const characterReading = useMemo(
+    () => characterNarrative(character),
+    [character],
   );
 
   const [shareState, setShareState] = useState("idle");
@@ -74,14 +82,21 @@ export default function ResultScreen({
         <p className={styles.reading}>{result.archetype.reading}</p>
       </Reveal>
 
+      <Reveal delay={280}>
+        <div className={styles.block}>
+          <h3 className={styles.blockTitle}>When belonging is tested</h3>
+          <p className={styles.character}>{characterReading}</p>
+        </div>
+      </Reveal>
+
       {result.emptyMessage ? (
-        <Reveal delay={320}>
+        <Reveal delay={360}>
           <p className={styles.note}>{result.emptyMessage}</p>
         </Reveal>
       ) : null}
 
       {result.primary ? (
-        <Reveal delay={380}>
+        <Reveal delay={420}>
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>Your affinity club</h3>
             <ClubRow match={result.primary} />
@@ -94,7 +109,7 @@ export default function ResultScreen({
       ) : null}
 
       {result.neighbours.length ? (
-        <Reveal delay={480}>
+        <Reveal delay={520}>
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>Near neighbours</h3>
             {result.neighbours.map((match) => (
@@ -108,7 +123,7 @@ export default function ResultScreen({
       ) : null}
 
       {result.admireFromAfar ? (
-        <Reveal delay={560}>
+        <Reveal delay={600}>
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>Admire from afar</h3>
             <div className={styles.club}>
@@ -121,7 +136,7 @@ export default function ResultScreen({
         </Reveal>
       ) : null}
 
-      <Reveal delay={640}>
+      <Reveal delay={680}>
         <div className={styles.block}>
           <h3 className={styles.blockTitle}>Next</h3>
           <a className={styles.ctaLink} href={nextPrimary.href} target="_blank" rel="noopener noreferrer">
@@ -146,7 +161,7 @@ export default function ResultScreen({
       </Reveal>
 
       {result.showSampleNotice ? (
-        <Reveal delay={720}>
+        <Reveal delay={760}>
           <p className={styles.sample}>
             Club scores are SAMPLE editorial estimates pending the researched
             database. Percentages are relative fit across the club set, not a

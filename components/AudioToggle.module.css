@@ -1,0 +1,35 @@
+.btn {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 30;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid var(--edge);
+  border-radius: 2px;
+  background: rgb(242 237 228 / 0.92);
+  color: var(--navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgb(10 17 31 / 0.12);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+.btnOn {
+  border-color: var(--navy);
+  box-shadow: inset 3px 0 0 var(--red);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}

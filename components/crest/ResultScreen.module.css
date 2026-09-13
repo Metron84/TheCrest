@@ -66,6 +66,15 @@
   color: var(--ink);
 }
 
+.character {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--ink);
+  max-width: 42ch;
+}
+
 .note {
   font-size: 15px;
   color: var(--ink);
