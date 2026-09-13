@@ -34,33 +34,21 @@ function easeInOutCubic(t) {
  *   club: object | null;
  *   onComplete: () => void;
  *   onStarfield: (patch: Partial<StarfieldControl>) => void;
- *   onCrowdWhiteout?: () => void;
- *   onCrowdGround?: () => void;
- *   onCrowdStop?: () => void;
  * }} props
  */
 export default function Arrival({
   club,
   onComplete,
   onStarfield,
-  onCrowdWhiteout,
-  onCrowdGround,
-  onCrowdStop,
 }) {
   const [phase, setPhase] = useState(/** @type {ArrivalPhase} */ ("idle"));
   const [reducedMotion, setReducedMotion] = useState(false);
   const completedRef = useRef(false);
   const onCompleteRef = useRef(onComplete);
   const onStarfieldRef = useRef(onStarfield);
-  const onCrowdWhiteoutRef = useRef(onCrowdWhiteout);
-  const onCrowdGroundRef = useRef(onCrowdGround);
-  const onCrowdStopRef = useRef(onCrowdStop);
 
   onCompleteRef.current = onComplete;
   onStarfieldRef.current = onStarfield;
-  onCrowdWhiteoutRef.current = onCrowdWhiteout;
-  onCrowdGroundRef.current = onCrowdGround;
-  onCrowdStopRef.current = onCrowdStop;
 
   useEffect(() => {
     const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -89,7 +77,6 @@ export default function Arrival({
         streak: false,
         warpMultiplier: 1,
       });
-      onCrowdStopRef.current?.();
       onCompleteRef.current();
     }
 
@@ -99,7 +86,6 @@ export default function Arrival({
 
     if (reducedMotion) {
       setPhase("ground");
-      onCrowdGroundRef.current?.();
       onStarfieldRef.current({
         running: true,
         opacity: 1,
@@ -120,7 +106,6 @@ export default function Arrival({
       fadeRaf = requestAnimationFrame(reducedFade);
       return () => {
         cancelled = true;
-        onCrowdStopRef.current?.();
         cancelAnimationFrame(fadeRaf);
         timers.forEach(clearTimeout);
       };
@@ -149,11 +134,9 @@ export default function Arrival({
         warpRaf = requestAnimationFrame(warpFrame);
       } else {
         setPhase("whiteout");
-        onCrowdWhiteoutRef.current?.();
         schedule(WHITEOUT_MS, () => {
           if (cancelled) return;
           setPhase("ground");
-          onCrowdGroundRef.current?.();
           onStarfieldRef.current({ streak: false });
           const groundStart = performance.now();
           function groundFade(now) {
@@ -173,7 +156,6 @@ export default function Arrival({
 
     return () => {
       cancelled = true;
-      onCrowdStopRef.current?.();
       cancelAnimationFrame(warpRaf);
       cancelAnimationFrame(fadeRaf);
       timers.forEach(clearTimeout);

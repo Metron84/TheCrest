@@ -1,6 +1,7 @@
 "use client";
 
 import GroundScene from "@/components/GroundScene";
+import InstallPrompt from "@/components/crest/InstallPrompt";
 import { resolveClubGround } from "@/lib/club-ground-meta";
 import { describeMatchClub } from "@/lib/tier";
 import styles from "./GroundFinale.module.css";
@@ -9,14 +10,12 @@ import styles from "./GroundFinale.module.css";
  * @param {{
  *   club: object | null;
  *   countryFits?: { id: string; label: string; match: { club: object; percent?: number } }[];
- *   onOpenReading: () => void;
  *   onRestart: () => void;
  * }} props
  */
 export default function GroundFinale({
   club,
   countryFits = [],
-  onOpenReading,
   onRestart,
 }) {
   const ground = resolveClubGround(club || {});
@@ -67,18 +66,12 @@ export default function GroundFinale({
         ) : null}
 
         <div className={styles.actions}>
-          <button
-            type="button"
-            className={styles.secondary}
-            onClick={onOpenReading}
-          >
-            Full reading
-          </button>
-          <button type="button" className={styles.ghost} onClick={onRestart}>
+          <button type="button" className={styles.secondary} onClick={onRestart}>
             Start again
           </button>
         </div>
       </div>
+      <InstallPrompt show />
     </div>
   );
 }

@@ -101,33 +101,20 @@
   margin-top: 14px;
 }
 
-.secondary,
-.ghost {
+.secondary {
   font-family: var(--font-ui);
   font-size: 14px;
   min-height: 44px;
   padding: 10px 16px;
   border-radius: 2px;
   cursor: pointer;
-}
-
-.secondary {
   border: 1px solid rgb(242 237 228 / 0.45);
   background: rgb(10 17 31 / 0.65);
   color: var(--cream);
   backdrop-filter: blur(6px);
 }
 
-.ghost {
-  border: 1px solid transparent;
-  background: transparent;
-  color: rgb(242 237 228 / 0.75);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.secondary:focus-visible,
-.ghost:focus-visible {
+.secondary:focus-visible {
   outline: 3px solid var(--red);
   outline-offset: 2px;
 }

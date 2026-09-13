@@ -2,20 +2,14 @@
 
 import { useCallback, useEffect, useMemo, useReducer, useState } from "react";
 import Arrival from "@/components/Arrival";
-import AudioToggle from "@/components/AudioToggle";
 import GroundFinale from "@/components/GroundFinale";
 import Starfield from "@/components/Starfield";
-import {
-  readCrestAudioEnabled,
-  writeCrestAudioEnabled,
-} from "@/lib/crest-audio-storage";
 import {
   destinationGlowColors,
   provisionalDestination,
 } from "@/lib/provisional-match";
 import { selectMatches } from "@/lib/select";
 import { describeMatchClub } from "@/lib/tier";
-import { useCrowdAudio } from "@/lib/use-crowd-audio";
 import {
   countQuizAnswers,
   initialState,
@@ -29,7 +23,6 @@ import JourneyShell from "./JourneyShell";
 import OpeningScreen from "./OpeningScreen";
 import OwnedClubScreen from "./OwnedClubScreen";
 import QuestionScreen from "./QuestionScreen";
-import ReadingOverlay from "./ReadingOverlay";
 import styles from "./CrestApp.module.css";
 
 function skipArrivalOnLoad() {
@@ -48,19 +41,11 @@ export default function CrestApp({ clubs }) {
   );
 
   const [arrivalDone, setArrivalDone] = useState(skipArrivalOnLoad);
-  const [readingOpen, setReadingOpen] = useState(false);
-  const [audioEnabled, setAudioEnabled] = useState(false);
   const [starfieldControl, setStarfieldControl] = useState(() =>
     skipArrivalOnLoad()
       ? { opacity: 0, running: false, warpMultiplier: 1, streak: false }
       : { opacity: 1, running: true, warpMultiplier: 1, streak: false },
   );
-
-  useEffect(() => {
-    setAudioEnabled(readCrestAudioEnabled());
-  }, []);
-
-  const crowd = useCrowdAudio(audioEnabled);
 
   useEffect(() => {
     persistState(state);
@@ -69,7 +54,6 @@ export default function CrestApp({ clubs }) {
   useEffect(() => {
     if (state.step !== "complete") {
       setArrivalDone(false);
-      setReadingOpen(false);
       setStarfieldControl({
         opacity: 1,
         running: true,
@@ -151,43 +135,15 @@ export default function CrestApp({ clubs }) {
     setArrivalDone(true);
   }, []);
 
-  const onCrowdWhiteout = useCallback(() => {
-    crowd.startWhiteout();
-  }, [crowd]);
-
-  const onCrowdGround = useCallback(() => {
-    crowd.startGround();
-  }, [crowd]);
-
-  const onCrowdStop = useCallback(() => {
-    crowd.stop();
-  }, [crowd]);
-
-  const toggleAudio = useCallback(() => {
-    setAudioEnabled((prev) => {
-      const next = !prev;
-      writeCrestAudioEnabled(next);
-      if (next) {
-        crowd.unlock();
-      } else {
-        crowd.stop();
-      }
-      return next;
-    });
-  }, [crowd]);
-
   const handleRestart = useCallback(() => {
-    crowd.stop();
-    setReadingOpen(false);
     dispatch({ type: "RESTART" });
-  }, [crowd]);
+  }, []);
 
   const showLanding = state.step === "start";
   const showJourney = state.step === "owned" || state.step === "quiz";
   const showArrival = quizComplete && !arrivalDone;
   const showGroundFinale = quizComplete && arrivalDone;
   const showStarfield = !showGroundFinale;
-  const showAudioToggle = showJourney || showArrival || showGroundFinale;
 
   return (
     <>
@@ -204,36 +160,17 @@ export default function CrestApp({ clubs }) {
           horizonRgb={glow.secondary}
         />
       ) : null}
-      {showAudioToggle ? (
-        <AudioToggle enabled={audioEnabled} onToggle={toggleAudio} />
-      ) : null}
       {showArrival ? (
         <Arrival
           club={destinationClub}
           onComplete={onArrivalComplete}
           onStarfield={patchStarfield}
-          onCrowdWhiteout={onCrowdWhiteout}
-          onCrowdGround={onCrowdGround}
-          onCrowdStop={onCrowdStop}
         />
       ) : null}
       {showGroundFinale ? (
         <GroundFinale
           club={destinationClub}
           countryFits={finalResult?.byCountry ?? []}
-          onOpenReading={() => setReadingOpen(true)}
-          onRestart={handleRestart}
-        />
-      ) : null}
-      {readingOpen && quizComplete && state.pillar ? (
-        <ReadingOverlay
-          scores={/** @type {number[]} */ (state.scores)}
-          character={state.character}
-          pillar={state.pillar}
-          ownedSlugs={state.ownedSlugs}
-          hatedColor={state.hatedColor}
-          clubs={clubs}
-          onClose={() => setReadingOpen(false)}
           onRestart={handleRestart}
         />
       ) : null}

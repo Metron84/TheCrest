@@ -1,8 +1,7 @@
-const CACHE_VERSION = "crest-shell-v2";
+const CACHE_VERSION = "crest-shell-v3";
 const PRECACHE = [
   "/",
   "/index.html",
-  "/audio/crowd-swell.mp3",
   "/clubs.json",
   "/manifest.webmanifest",
   "/icons/icon-192.png",
