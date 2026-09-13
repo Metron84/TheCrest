@@ -2,8 +2,8 @@
 
 import styles from "./ProgressRail.module.css";
 
-/** @param {{ activeIndex: number; total?: number }} props */
-export default function ProgressRail({ activeIndex, total = 12 }) {
+/** @param {{ activeIndex: number; total?: number; journey?: boolean }} props */
+export default function ProgressRail({ activeIndex, total = 12, journey = false }) {
   const step = Math.min(activeIndex + 1, total);
   const label =
     activeIndex >= total
@@ -11,7 +11,7 @@ export default function ProgressRail({ activeIndex, total = 12 }) {
       : `${step} of ${total}`;
 
   return (
-    <div className={styles.wrap}>
+    <div className={`${styles.wrap} ${journey ? styles.wrapJourney : ""}`}>
       <p className={styles.label}>{label}</p>
       <div className={styles.rail} aria-hidden="true">
         {Array.from({ length: total }, (_, i) => {

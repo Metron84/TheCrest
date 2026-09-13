@@ -1,86 +1,85 @@
 .screen {
+  position: relative;
   flex: 1;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 760px;
-  margin: 0 auto;
   width: 100%;
 }
 
-.markRow {
-  display: flex;
-  align-items: flex-end;
-  gap: 16px;
+.center {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
-.markIcon {
-  width: 56px;
-  height: 56px;
-  border-radius: 4px;
-  flex-shrink: 0;
-  box-shadow: 0 4px 16px rgb(10 17 31 / 0.12);
+.foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--pad) max(36px, calc(28px + env(safe-area-inset-bottom)));
+  z-index: 1;
 }
 
 .mark {
   font-family: var(--font-display);
-  font-size: clamp(52px, 16vw, 104px);
-  line-height: 0.92;
+  font-size: clamp(36px, 9vw, 56px);
+  line-height: 1;
   letter-spacing: -0.02em;
   margin: 0;
+  color: var(--cream);
+  font-weight: 400;
 }
 
 .mark em {
   font-style: italic;
 }
 
-.standfirst {
+.line {
   font-family: var(--font-display);
-  font-size: clamp(20px, 4.6vw, 28px);
-  line-height: 1.3;
-  margin: 22px 0 0;
+  font-size: clamp(16px, 3.8vw, 20px);
+  line-height: 1.35;
+  color: rgb(242 237 228 / 0.78);
+  margin: 12px 0 0;
   max-width: 22ch;
-  border-left: 3px solid var(--red);
-  padding-left: 14px;
 }
 
-.note {
-  color: var(--ink);
-  font-size: 15px;
-  margin: 18px 0 0;
-  max-width: 40ch;
-}
-
-.cta {
-  display: block;
-  width: 100%;
-  background: var(--navy);
-  color: var(--cream);
+.start {
+  margin-top: 22px;
+  background: none;
   border: 0;
-  border-radius: 2px;
-  padding: 18px;
+  padding: 12px 8px;
+  min-height: 44px;
   font-family: var(--font-ui);
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 28px;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
   cursor: pointer;
-  min-height: 56px;
-  transition: opacity 0.15s ease, transform 0.12s ease;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 
-.cta:active {
-  opacity: 0.88;
-  transform: scale(0.99);
+.start:active {
+  opacity: 0.75;
 }
 
-.cta:focus-visible {
+.start:focus-visible {
   outline: 3px solid var(--red);
-  outline-offset: 2px;
+  outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .cta:active {
-    transform: none;
+@media (min-width: 760px) {
+  .center {
+    top: 44%;
+  }
+
+  .foot {
+    padding-bottom: max(48px, calc(40px + env(safe-area-inset-bottom)));
   }
 }

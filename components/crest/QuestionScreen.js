@@ -25,6 +25,7 @@ import styles from "./QuestionScreen.module.css";
  *   onAnswerCharacter: (key: string, value: number) => void;
  *   onAnswerPillar: (w: { Heart: number; Mind: number; Soul: number }) => void;
  *   onBack: () => void;
+ *   journey?: boolean;
  * }} props
  */
 export default function QuestionScreen({
@@ -35,6 +36,7 @@ export default function QuestionScreen({
   onAnswerCharacter,
   onAnswerPillar,
   onBack,
+  journey = false,
 }) {
   const isPillar = quizIndex >= PILLAR_STEP_INDEX;
   const isCharacter =
@@ -78,8 +80,14 @@ export default function QuestionScreen({
   const showCharacterIntro = isCharacter && charIndex === 0;
 
   return (
-    <section className={styles.screen}>
-      <ProgressRail activeIndex={quizIndex} total={QUIZ_STEP_COUNT} />
+    <section
+      className={`${styles.screen} ${journey ? styles.screenJourney : ""}`}
+    >
+      <ProgressRail
+        activeIndex={quizIndex}
+        total={QUIZ_STEP_COUNT}
+        journey={journey}
+      />
       <div className={styles.split}>
         <div className={styles.prompt}>
           <p className={styles.pillar}>{pillarLabel}</p>

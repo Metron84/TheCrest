@@ -5,6 +5,14 @@
   pointer-events: none;
 }
 
+.wrapInteractive {
+  pointer-events: auto;
+}
+
+.overlayInteractive {
+  padding-bottom: max(120px, calc(48px + env(safe-area-inset-bottom)));
+}
+
 .svg {
   display: block;
   width: 100%;

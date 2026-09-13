@@ -12,9 +12,9 @@ import styles from "./GroundScene.module.css";
 const MOBILE_VIEW = "0 0 390 844";
 const DESKTOP_VIEW = "-195 0 780 844";
 /**
- * @param {{ club: object | null }} props
+ * @param {{ club: object | null; interactive?: boolean }} props
  */
-export default function GroundScene({ club }) {
+export default function GroundScene({ club, interactive = false }) {
   const ground = useMemo(() => resolveClubGround(club || {}), [club]);
   const displayName = club ? describeMatchClub(club) : "Your club";
   const stars = useMemo(() => starsForClub(club?.slug || ""), [club?.slug]);
@@ -113,7 +113,7 @@ export default function GroundScene({ club }) {
   const glowId = `glow-${club?.slug || "default"}`;
 
   return (
-    <div className={styles.wrap}>
+    <div className={`${styles.wrap} ${interactive ? styles.wrapInteractive : ""}`}>
       <svg
         className={styles.svg}
         viewBox={viewBox}
@@ -169,7 +169,9 @@ export default function GroundScene({ club }) {
         </g>
       </svg>
 
-      <div className={styles.overlay}>
+      <div
+        className={`${styles.overlay} ${interactive ? styles.overlayInteractive : ""}`}
+      >
         {club?.badge_url ? (
           <img
             src={club.badge_url}

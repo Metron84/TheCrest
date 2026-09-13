@@ -9,6 +9,18 @@ const BG = "#0A111F";
 const BG_RGB = "10, 17, 31";
 const STAR_RGB = "242, 237, 228";
 const GLOW_RGB = "216, 35, 42";
+
+/** @param {string} a "r,g,b" @param {string} b @param {number} t */
+function mixRgb(a, b, t) {
+  const clamp = Math.min(1, Math.max(0, t));
+  const pa = a.split(",").map((x) => Number(x.trim()));
+  const pb = b.split(",").map((x) => Number(x.trim()));
+  if (pa.length !== 3 || pb.length !== 3) return a;
+  const r = Math.round(pa[0] + (pb[0] - pa[0]) * clamp);
+  const g = Math.round(pa[1] + (pb[1] - pa[1]) * clamp);
+  const bl = Math.round(pa[2] + (pb[2] - pa[2]) * clamp);
+  return `${r}, ${g}, ${bl}`;
+}
 const BOOST_MS = 900;
 const BOOST_PEAK = 6;
 const PROGRESS_MS = 1200;
@@ -39,6 +51,9 @@ function baseStarCount(w) {
  *   running?: boolean;
  *   warpMultiplier?: number;
  *   streak?: boolean;
+ *   destinationGlowRgb?: string | null;
+ *   destinationMix?: number;
+ *   horizonRgb?: string | null;
  * }} props
  * progress 0–1: baseline speed 0.15 → 0.6 (smoothed over 1200ms)
  * boost: increment to trigger a 900ms speed burst (×6 easing to baseline)
@@ -50,6 +65,9 @@ export default function Starfield({
   running = true,
   warpMultiplier = 1,
   streak = false,
+  destinationGlowRgb = null,
+  destinationMix = 0,
+  horizonRgb = null,
 }) {
   const canvasRef = useRef(null);
   const starsRef = useRef(/** @type {{ x: number; y: number; z: number }[] | null} */ (null));
@@ -68,6 +86,9 @@ export default function Starfield({
   const warpMultiplierRef = useRef(warpMultiplier);
   const streakRef = useRef(streak);
   const opacityRef = useRef(opacity);
+  const destinationGlowRef = useRef(destinationGlowRgb);
+  const destinationMixRef = useRef(destinationMix);
+  const horizonRgbRef = useRef(horizonRgb);
   const tickRef = useRef(/** @type {((now: number) => void) | null} */ (null));
   const [reducedMotion, setReducedMotion] = useState(false);
 
@@ -76,6 +97,9 @@ export default function Starfield({
   warpMultiplierRef.current = warpMultiplier;
   streakRef.current = streak;
   opacityRef.current = opacity;
+  destinationGlowRef.current = destinationGlowRgb;
+  destinationMixRef.current = destinationMix;
+  horizonRgbRef.current = horizonRgb;
 
   useEffect(() => {
     const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -159,11 +183,27 @@ export default function Starfield({
       const cx = w * 0.5;
       const cy = h * 0.5;
       const r = glowRadius(p, now, animatePulse);
+      const mix = Math.min(1, Math.max(0, destinationMixRef.current));
+      const dest = destinationGlowRef.current;
+      const glow = dest ? mixRgb(GLOW_RGB, dest, mix) : GLOW_RGB;
       const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
-      g.addColorStop(0, `rgba(${GLOW_RGB}, 0.12)`);
+      g.addColorStop(0, `rgba(${glow}, ${0.1 + mix * 0.14})`);
+      g.addColorStop(0.55, `rgba(${glow}, ${0.04 + mix * 0.06})`);
       g.addColorStop(1, `rgb(${BG_RGB})`);
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, w, h);
+
+      const horizon = horizonRgbRef.current;
+      if (horizon && p > 0.2) {
+        const lift = easeInOutCubic(Math.min(1, (p - 0.2) / 0.65));
+        const bandH = h * (0.08 + lift * 0.22);
+        const grad = ctx.createLinearGradient(0, h - bandH, 0, h);
+        grad.addColorStop(0, `rgba(${horizon}, 0)`);
+        grad.addColorStop(0.35, `rgba(${horizon}, ${0.12 + lift * 0.2})`);
+        grad.addColorStop(1, `rgba(${horizon}, ${0.35 + lift * 0.25})`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, h - bandH, w, bandH);
+      }
     }
 
     function spawnNearCentre(star, w, h) {

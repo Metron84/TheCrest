@@ -1,0 +1,60 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgb(10 17 31 / 0.72);
+  display: flex;
+  flex-direction: column;
+  animation: reading-in 0.25s ease-out;
+}
+
+.sheet {
+  margin-top: auto;
+  max-height: min(92svh, 900px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--cream);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -12px 48px rgb(0 0 0 / 0.35);
+}
+
+.closeBar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px var(--pad);
+  background: linear-gradient(var(--cream), rgb(242 237 228 / 0.92));
+}
+
+.close {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  cursor: pointer;
+  padding: 8px 12px;
+  min-height: 44px;
+}
+
+.close:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+@keyframes reading-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop {
+    animation: none;
+  }
+}

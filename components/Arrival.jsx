@@ -50,6 +50,17 @@ export default function Arrival({
   const [phase, setPhase] = useState(/** @type {ArrivalPhase} */ ("idle"));
   const [reducedMotion, setReducedMotion] = useState(false);
   const completedRef = useRef(false);
+  const onCompleteRef = useRef(onComplete);
+  const onStarfieldRef = useRef(onStarfield);
+  const onCrowdWhiteoutRef = useRef(onCrowdWhiteout);
+  const onCrowdGroundRef = useRef(onCrowdGround);
+  const onCrowdStopRef = useRef(onCrowdStop);
+
+  onCompleteRef.current = onComplete;
+  onStarfieldRef.current = onStarfield;
+  onCrowdWhiteoutRef.current = onCrowdWhiteout;
+  onCrowdGroundRef.current = onCrowdGround;
+  onCrowdStopRef.current = onCrowdStop;
 
   useEffect(() => {
     const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -72,9 +83,14 @@ export default function Arrival({
     function finish() {
       if (completedRef.current || cancelled) return;
       completedRef.current = true;
-      onStarfield({ running: false, opacity: 0, streak: false, warpMultiplier: 1 });
-      onCrowdStop?.();
-      onComplete();
+      onStarfieldRef.current({
+        running: false,
+        opacity: 0,
+        streak: false,
+        warpMultiplier: 1,
+      });
+      onCrowdStopRef.current?.();
+      onCompleteRef.current();
     }
 
     function schedule(ms, fn) {
@@ -83,8 +99,8 @@ export default function Arrival({
 
     if (reducedMotion) {
       setPhase("ground");
-      onCrowdGround?.();
-      onStarfield({
+      onCrowdGroundRef.current?.();
+      onStarfieldRef.current({
         running: true,
         opacity: 1,
         streak: false,
@@ -94,7 +110,7 @@ export default function Arrival({
       function reducedFade(now) {
         if (cancelled) return;
         const t = Math.min(1, (now - fadeStart) / REDUCED_MS);
-        onStarfield({ opacity: 1 - t, running: t < 1 });
+        onStarfieldRef.current({ opacity: 1 - t, running: t < 1 });
         if (t < 1) {
           fadeRaf = requestAnimationFrame(reducedFade);
         } else {
@@ -104,14 +120,14 @@ export default function Arrival({
       fadeRaf = requestAnimationFrame(reducedFade);
       return () => {
         cancelled = true;
-        onCrowdStop?.();
+        onCrowdStopRef.current?.();
         cancelAnimationFrame(fadeRaf);
         timers.forEach(clearTimeout);
       };
     }
 
     setPhase("warp");
-    onStarfield({
+    onStarfieldRef.current({
       running: true,
       opacity: 1,
       streak: true,
@@ -123,22 +139,27 @@ export default function Arrival({
       if (cancelled) return;
       const t = Math.min(1, (now - warpStart) / WARP_MS);
       const mult = 1 + (WARP_PEAK - 1) * easeInOutCubic(t);
-      onStarfield({ warpMultiplier: mult, streak: true, running: true, opacity: 1 });
+      onStarfieldRef.current({
+        warpMultiplier: mult,
+        streak: true,
+        running: true,
+        opacity: 1,
+      });
       if (t < 1) {
         warpRaf = requestAnimationFrame(warpFrame);
       } else {
         setPhase("whiteout");
-        onCrowdWhiteout?.();
+        onCrowdWhiteoutRef.current?.();
         schedule(WHITEOUT_MS, () => {
           if (cancelled) return;
           setPhase("ground");
-          onCrowdGround?.();
-          onStarfield({ streak: false });
+          onCrowdGroundRef.current?.();
+          onStarfieldRef.current({ streak: false });
           const groundStart = performance.now();
           function groundFade(now) {
             if (cancelled) return;
             const t = Math.min(1, (now - groundStart) / GROUND_MS);
-            onStarfield({ opacity: 1 - t, running: t < 0.98 });
+            onStarfieldRef.current({ opacity: 1 - t, running: t < 0.98 });
             if (t < 1) {
               fadeRaf = requestAnimationFrame(groundFade);
             }
@@ -152,20 +173,12 @@ export default function Arrival({
 
     return () => {
       cancelled = true;
-      onCrowdStop?.();
+      onCrowdStopRef.current?.();
       cancelAnimationFrame(warpRaf);
       cancelAnimationFrame(fadeRaf);
       timers.forEach(clearTimeout);
     };
-  }, [
-    club?.slug,
-    reducedMotion,
-    onComplete,
-    onStarfield,
-    onCrowdWhiteout,
-    onCrowdGround,
-    onCrowdStop,
-  ]);
+  }, [club?.slug, reducedMotion]);
 
   const overlayClass =
     phase === "whiteout"
