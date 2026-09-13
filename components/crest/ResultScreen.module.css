@@ -98,6 +98,20 @@
   font-weight: 500;
 }
 
+.countryRow {
+  margin-top: 16px;
+}
+
+.countryLabel {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 6px;
+  opacity: 0.7;
+}
+
 .blockTitle::before {
   content: "";
   display: inline-block;

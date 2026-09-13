@@ -95,43 +95,28 @@ export default function ResultScreen({
         </Reveal>
       ) : null}
 
-      {result.primary ? (
+      {result.byCountry?.length ? (
         <Reveal delay={420}>
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Your affinity club</h3>
-            <ClubRow match={result.primary} />
+            <h3 className={styles.blockTitle}>Your clubs</h3>
             <p className={styles.why}>
-              Closest on {result.primary.reason}. A club to explore alongside the
-              one you already carry.
+              One club in England, Italy, France, Spain, and Germany. From
+              heart, mind, soul, and character. Percentages are relative fit
+              among these five.
             </p>
-          </div>
-        </Reveal>
-      ) : null}
-
-      {result.neighbours.length ? (
-        <Reveal delay={520}>
-          <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Near neighbours</h3>
-            {result.neighbours.map((match) => (
-              <div key={match.club.slug}>
-                <ClubRow match={match} />
-                <p className={styles.why}>Closest on {match.reason}.</p>
+            {result.byCountry.map((row) => (
+              <div key={row.id} className={styles.countryRow}>
+                <p className={styles.countryLabel}>{row.label}</p>
+                <ClubRow match={row.match} />
               </div>
             ))}
           </div>
         </Reveal>
-      ) : null}
-
-      {result.admireFromAfar ? (
-        <Reveal delay={600}>
+      ) : result.primary ? (
+        <Reveal delay={420}>
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Admire from afar</h3>
-            <div className={styles.club}>
-              <ClubRowInner club={result.admireFromAfar.club} />
-            </div>
-            <p className={styles.why}>
-              {result.admireLine} Closest on {result.admireFromAfar.reason}.
-            </p>
+            <h3 className={styles.blockTitle}>Your affinity club</h3>
+            <ClubRow match={result.primary} />
           </div>
         </Reveal>
       ) : null}

@@ -12,9 +12,13 @@ import styles from "./GroundScene.module.css";
 const MOBILE_VIEW = "0 0 390 844";
 const DESKTOP_VIEW = "-195 0 780 844";
 /**
- * @param {{ club: object | null; interactive?: boolean }} props
+ * @param {{ club: object | null; interactive?: boolean; sceneOnly?: boolean }} props
  */
-export default function GroundScene({ club, interactive = false }) {
+export default function GroundScene({
+  club,
+  interactive = false,
+  sceneOnly = false,
+}) {
   const ground = useMemo(() => resolveClubGround(club || {}), [club]);
   const displayName = club ? describeMatchClub(club) : "Your club";
   const stars = useMemo(() => starsForClub(club?.slug || ""), [club?.slug]);
@@ -169,6 +173,7 @@ export default function GroundScene({ club, interactive = false }) {
         </g>
       </svg>
 
+      {sceneOnly ? null : (
       <div
         className={`${styles.overlay} ${interactive ? styles.overlayInteractive : ""}`}
       >
@@ -213,6 +218,7 @@ export default function GroundScene({ club, interactive = false }) {
           ) : null}
         </div>
       </div>
+      )}
     </div>
   );
 }

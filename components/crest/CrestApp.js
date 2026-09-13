@@ -100,16 +100,17 @@ export default function CrestApp({ clubs }) {
     [state.scores, state.pillar, state.ownedSlugs, clubs],
   );
 
-  const finalClub = useMemo(() => {
+  const finalResult = useMemo(() => {
     if (!quizComplete || !state.pillar) return null;
-    const result = selectMatches(
+    return selectMatches(
       /** @type {number[]} */ (state.scores),
       clubs,
       state.pillar,
       state.ownedSlugs,
     );
-    return result.primary?.club ?? null;
   }, [quizComplete, state.scores, state.pillar, state.ownedSlugs, clubs]);
+
+  const finalClub = finalResult?.primary?.club ?? null;
 
   const destinationClub = finalClub ?? provisional?.club ?? null;
 
@@ -211,6 +212,7 @@ export default function CrestApp({ clubs }) {
       {showGroundFinale ? (
         <GroundFinale
           club={destinationClub}
+          countryFits={finalResult?.byCountry ?? []}
           onOpenReading={() => setReadingOpen(true)}
           onRestart={handleRestart}
         />
@@ -238,13 +240,10 @@ export default function CrestApp({ clubs }) {
               <div key={screenKey} className={styles.screenEnter}>
                 <OwnedClubScreen
                   clubs={clubs}
-                  ownedSlugs={state.ownedSlugs}
-                  noClubYet={state.noClubYet}
-                  onToggle={(slug) =>
-                    dispatch({ type: "TOGGLE_OWNED", payload: slug })
+                  onChooseClub={(slug) =>
+                    dispatch({ type: "CHOOSE_OWNED", payload: slug })
                   }
                   onNoClub={() => dispatch({ type: "NO_CLUB_YET" })}
-                  onContinue={() => dispatch({ type: "OWNED_CONTINUE" })}
                   onBack={() => dispatch({ type: "BACK" })}
                 />
               </div>
