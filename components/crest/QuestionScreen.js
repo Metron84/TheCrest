@@ -2,10 +2,7 @@
 
 import {
   AFFINITY_COUNT,
-  CHARACTER_DIMS,
-  CHARACTER_INTRO,
   CHARACTER_QUESTIONS,
-  DIMS,
   PILLAR_Q,
   PILLAR_STEP_INDEX,
   QUESTIONS,
@@ -43,20 +40,11 @@ export default function QuestionScreen({
     quizIndex >= AFFINITY_COUNT && quizIndex < PILLAR_STEP_INDEX;
   const charIndex = isCharacter ? quizIndex - AFFINITY_COUNT : 0;
 
-  let pillarLabel = "Balance";
-  let themeLine = null;
-  let questionText = PILLAR_Q.q;
-
-  if (isPillar) {
-    pillarLabel = "Balance";
-  } else if (isCharacter) {
-    pillarLabel = "Character";
-    themeLine = CHARACTER_DIMS[charIndex].theme;
-    questionText = CHARACTER_QUESTIONS[charIndex].q;
-  } else {
-    pillarLabel = DIMS[quizIndex].pillar;
-    questionText = QUESTIONS[quizIndex].q;
-  }
+  const questionText = isPillar
+    ? PILLAR_Q.q
+    : isCharacter
+      ? CHARACTER_QUESTIONS[charIndex].q
+      : QUESTIONS[quizIndex].q;
 
   const options = isPillar
     ? PILLAR_Q.a.map((o) => ({ label: o.t, pillar: o.w }))
@@ -77,8 +65,6 @@ export default function QuestionScreen({
       ? character[CHARACTER_QUESTIONS[charIndex].key]
       : scores[quizIndex];
 
-  const showCharacterIntro = isCharacter && charIndex === 0;
-
   return (
     <section
       className={`${styles.screen} ${journey ? styles.screenJourney : ""}`}
@@ -90,11 +76,6 @@ export default function QuestionScreen({
       />
       <div className={styles.split}>
         <div className={styles.prompt}>
-          <p className={styles.pillar}>{pillarLabel}</p>
-          {themeLine ? <p className={styles.theme}>{themeLine}</p> : null}
-          {showCharacterIntro ? (
-            <p className={styles.lead}>{CHARACTER_INTRO}</p>
-          ) : null}
           <h2 className={styles.q}>{questionText}</h2>
         </div>
         <div className={styles.opts} role="group" aria-label={questionText}>

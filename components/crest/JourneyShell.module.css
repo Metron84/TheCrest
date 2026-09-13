@@ -52,12 +52,10 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: rgb(10 17 31 / 0.62);
-  border: 1px solid rgb(242 237 228 / 0.12);
-  border-radius: 2px;
-  backdrop-filter: blur(10px);
-  padding: 20px var(--pad) 28px;
-  box-shadow: 0 24px 64px rgb(0 0 0 / 0.35);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 0 20px;
 }
 
 .panel :global(.crest-journey-q),

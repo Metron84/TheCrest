@@ -18,13 +18,20 @@ const enriched = clubs.map((club) => {
     (club.cluster && CLUSTER_PRIMARY[club.cluster]) ||
     "#0A111F";
   const secondary = preset?.secondary || "#1a2438";
-  const stadiumName = preset?.stadiumName || "Home ground";
+  const existingStadium =
+    club.stadiumName && club.stadiumName !== "Home ground"
+      ? club.stadiumName
+      : null;
+  const stadiumName = existingStadium || preset?.stadiumName || "Home ground";
+  const city =
+    (club.city && club.city !== "Unknown" && club.city) ||
+    "Unknown";
   const skylineVariant =
     preset?.skylineVariant ?? (hashSlug(club.slug) % 6) + 1;
 
   return {
     ...club,
-    city: club.city || "Unknown",
+    city,
     primary,
     secondary,
     stadiumName,
