@@ -105,7 +105,7 @@ export default function QuestionScreen({
           })}
         </div>
       </div>
-      <BackButton onBack={onBack} />
+      <BackButton onBack={onBack} journey={journey} />
     </section>
   );
 }

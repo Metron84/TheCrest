@@ -126,7 +126,7 @@
   background: rgb(10 17 31 / 0.35);
 }
 
-.screenJourney .picked {
+.screenJourney .opt.picked {
   background: var(--cream);
   border-color: var(--cream);
   color: var(--navy);

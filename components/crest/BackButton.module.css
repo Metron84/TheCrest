@@ -9,6 +9,10 @@
   align-self: flex-start;
 }
 
+.backJourney {
+  color: var(--cream);
+}
+
 .back:focus-visible {
   outline: 3px solid var(--red);
   outline-offset: 2px;

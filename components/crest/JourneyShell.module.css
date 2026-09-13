@@ -56,6 +56,7 @@
   border: 0;
   border-radius: 0;
   padding: 8px 0 20px;
+  color: var(--cream);
 }
 
 .panel :global(.crest-journey-q),
@@ -70,10 +71,6 @@
 
 .panel p {
   color: rgb(242 237 228 / 0.88);
-}
-
-.panel button:not(:disabled) {
-  color: inherit;
 }
 
 .panel a {
