@@ -21,7 +21,7 @@ import styles from "./QuestionScreen.module.css";
  *   quizIndex: number;
  *   scores: (number|null)[];
  *   character: { integrity: number|null; decency: number|null; respect: number|null; power: number|null };
- *   hatedColor?: string|null;
+ *   hatedColors?: string[];
  *   onAnswerDimension: (index: number, value: number) => void;
  *   onAnswerCharacter: (key: string, value: number) => void;
  *   onAnswerPillar: (w: { Heart: number; Mind: number; Soul: number }) => void;
@@ -34,7 +34,7 @@ export default function QuestionScreen({
   quizIndex,
   scores,
   character,
-  hatedColor = null,
+  hatedColors = [],
   onAnswerDimension,
   onAnswerCharacter,
   onAnswerPillar,
@@ -72,7 +72,7 @@ export default function QuestionScreen({
           }));
 
   const selected = isColor
-    ? hatedColor
+    ? hatedColors
     : isPillar
       ? null
       : isCharacter
@@ -96,13 +96,19 @@ export default function QuestionScreen({
         {isColor ? (
           <div className={styles.colorGrid} role="group" aria-label={questionText}>
             {KIT_FAMILIES.map((color) => {
-              const picked = selected === color;
+              const rank = Array.isArray(selected)
+                ? selected.indexOf(color) + 1
+                : 0;
+              const picked = rank > 0;
               return (
                 <button
                   key={color}
                   type="button"
                   className={`${styles.colorChip} ${picked ? styles.colorPicked : ""}`}
                   aria-pressed={picked}
+                  aria-label={
+                    picked ? `${color}, rank ${rank}` : color
+                  }
                   onClick={() => onAnswerColor(color)}
                 >
                   <span
@@ -110,6 +116,11 @@ export default function QuestionScreen({
                     aria-hidden="true"
                   />
                   <span className={styles.colorName}>{color}</span>
+                  {picked ? (
+                    <span className={styles.colorRank} aria-hidden="true">
+                      {rank}
+                    </span>
+                  ) : null}
                 </button>
               );
             })}

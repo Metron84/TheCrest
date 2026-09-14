@@ -81,7 +81,14 @@ export default function CrestApp({ clubs }) {
 
   const provisional = useMemo(
     () => provisionalDestination(state, clubs),
-    [state.scores, state.pillar, state.ownedSlugs, state.hatedColor, clubs],
+    [
+      state.scores,
+      state.pillar,
+      state.ownedSlugs,
+      state.hatedColors,
+      state.character,
+      clubs,
+    ],
   );
 
   const finalResult = useMemo(() => {
@@ -91,14 +98,16 @@ export default function CrestApp({ clubs }) {
       clubs,
       state.pillar,
       state.ownedSlugs,
-      state.hatedColor,
+      state.hatedColors,
+      state.character,
     );
   }, [
     quizComplete,
     state.scores,
     state.pillar,
     state.ownedSlugs,
-    state.hatedColor,
+    state.hatedColors,
+    state.character,
     clubs,
   ]);
 
@@ -200,7 +209,7 @@ export default function CrestApp({ clubs }) {
                   quizIndex={state.quizIndex}
                   scores={state.scores}
                   character={state.character}
-                  hatedColor={state.hatedColor}
+                  hatedColors={state.hatedColors}
                   onAnswerDimension={(index, value) =>
                     dispatch({
                       type: "ANSWER_DIMENSION",

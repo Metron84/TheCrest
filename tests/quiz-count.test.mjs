@@ -37,7 +37,7 @@ test("affinity and character items are three stances", () => {
     assert.equal(q.a.length, 3, q.q);
   }
   assert.equal(PILLAR_Q.a.length, 4);
-  assert.equal(COLOR_Q.q, "What is your least favourite colour?");
+  assert.equal(COLOR_Q.q, "Which colours do you want least?");
   assert.equal(KIT_FAMILIES.length, 12);
 });
 
@@ -52,13 +52,27 @@ test("pillar answer opens the colour step and colour completes the quiz", () => 
   );
   assert.equal(afterPillar.step, "quiz");
   assert.equal(afterPillar.quizIndex, COLOR_STEP_INDEX);
-  assert.equal(afterPillar.hatedColor, null);
+  assert.deepEqual(afterPillar.hatedColors, []);
   assert.equal(isQuizComplete(afterPillar), false);
 
-  const afterColor = quizReducer(afterPillar, {
+  const afterFirst = quizReducer(afterPillar, {
     type: "ANSWER_COLOR",
     payload: "red",
   });
-  assert.equal(afterColor.step, "complete");
-  assert.equal(afterColor.hatedColor, "red");
+  assert.equal(afterFirst.step, "quiz");
+  assert.deepEqual(afterFirst.hatedColors, ["red"]);
+
+  const afterSecond = quizReducer(afterFirst, {
+    type: "ANSWER_COLOR",
+    payload: "blue",
+  });
+  assert.equal(afterSecond.step, "quiz");
+
+  const afterThird = quizReducer(afterSecond, {
+    type: "ANSWER_COLOR",
+    payload: "white",
+  });
+  assert.equal(afterThird.step, "complete");
+  assert.deepEqual(afterThird.hatedColors, ["red", "blue", "white"]);
+  assert.equal(isQuizComplete({ ...afterThird, scores: Array(12).fill(4), character: { integrity: 4, decency: 4, respect: 4, power: 4 } }), true);
 });
