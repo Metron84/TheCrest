@@ -4,7 +4,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { countryForClub, CREST_COUNTRIES } from "../lib/club-country.js";
-import { resetVarianceCache } from "../lib/scoring.js";
+import { comparePathEntries, resetVarianceCache } from "../lib/scoring.js";
 import { pickCountryMatches, selectMatches } from "../lib/select.js";
 
 resetVarianceCache();
@@ -61,7 +61,7 @@ test("primary is the strongest of the five country clubs", () => {
   const everton = clubs.find((c) => c.slug === "everton");
   const result = selectMatches(everton.vector, clubs, equalPillar, []);
   const best = result.byCountry.reduce((a, b) =>
-    b.match.raw > a.match.raw ? b : a,
+    comparePathEntries(b.match, a.match) < 0 ? b : a,
   );
   assert.equal(result.primary.club.slug, best.match.club.slug);
 });

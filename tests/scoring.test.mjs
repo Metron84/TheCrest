@@ -58,7 +58,7 @@ test("rawFit is perfect for identical vectors", () => {
   assert.ok(Math.abs(fit - 1) < 1e-9);
 });
 
-test("Tier B cannot be primary unless it clearly beats the best Tier A", () => {
+test("Tier B cannot be primary unless it clearly beats the best Tier A in the same stratum", () => {
   resetVarianceCache();
   const userVector = Array(12).fill(4);
   const tierA = {
