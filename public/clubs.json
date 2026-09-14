@@ -711,31 +711,31 @@
       4,
       4,
       5,
-      4,
+      5,
       4,
       4,
       4,
       4,
       6,
       4,
-      4,
-      4
+      6,
+      5
     ],
     "confidence": [
       1,
       1,
-      1,
-      1,
+      2,
+      2,
       1,
       1,
       1,
       1,
       2,
       1,
-      1,
-      1
+      2,
+      2
     ],
-    "identity_summary": "A Basque civic club from Vitoria-Gasteiz, local in scale more than globally famous.",
+    "identity_summary": "A Basque civic club that emptied its stands rather than accept Monday football.",
     "kit_family": "blue",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -1310,9 +1310,9 @@
       2,
       5,
       6,
-      6,
-      6,
       5,
+      6,
+      4,
       6
     ],
     "confidence": [
@@ -1329,7 +1329,7 @@
       3,
       3
     ],
-    "identity_summary": "Built on resistance and effort, and proud that its glory has always been taken rather than expected.",
+    "identity_summary": "Built on resistance and effort. The outsider story sits next to a club that now wants scale.",
     "kit_family": "red",
     "exclusion_clubs": [
       "real-madrid"
@@ -1408,12 +1408,12 @@
       3,
       7,
       6,
-      7,
-      7,
-      4,
-      6,
       5,
-      6
+      6,
+      3,
+      5,
+      3,
+      5
     ],
     "confidence": [
       3,
@@ -1429,7 +1429,7 @@
       3,
       3
     ],
-    "identity_summary": "A way of playing treated as a belief system, taught to children before they are trusted with the first team.",
+    "identity_summary": "A way of playing treated as belief, and a member club that often behaves like a global company.",
     "kit_family": "blue",
     "exclusion_clubs": [
       "real-madrid",
@@ -1809,7 +1809,7 @@
       4,
       6,
       5,
-      4,
+      5,
       5
     ],
     "confidence": [
@@ -1823,10 +1823,10 @@
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "A civic rossoblu club from Bologna, old enough to feel like the city's own team.",
+    "identity_summary": "Bologna's civic rossoblu. The city comes first, and the curve shows up for the national fights.",
     "kit_family": "red",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -3180,21 +3180,21 @@
     "competition": "Premier League",
     "vector": [
       3,
+      5,
+      2,
       4,
+      4,
+      4,
+      2,
+      2,
       2,
       3,
-      4,
-      4,
       2,
-      2,
-      2,
-      3,
-      2,
-      3
+      4
     ],
     "confidence": [
       2,
-      1,
+      2,
       2,
       2,
       1,
@@ -3206,7 +3206,7 @@
       2,
       1
     ],
-    "identity_summary": "Chelsea is a west London club that became a global brand. Winning and buying sit on the identity.",
+    "identity_summary": "West London people who stay through resets. The institution buys and starts again.",
     "kit_family": "blue",
     "exclusion_clubs": [
       "fulham"
@@ -3387,8 +3387,8 @@
       4,
       6,
       5,
-      4,
-      5
+      5,
+      6
     ],
     "confidence": [
       2,
@@ -3401,10 +3401,10 @@
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Coventry's sky-blue civic club. Years away from a home ground sit on the identity.",
+    "identity_summary": "Coventry's sky-blue people. Years of marches and boycotts to keep the club in the city.",
     "kit_family": "blue",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -3477,7 +3477,7 @@
     "vector": [
       4,
       5,
-      4,
+      5,
       5,
       4,
       4,
@@ -3485,24 +3485,24 @@
       4,
       6,
       5,
-      4,
-      5
+      6,
+      6
     ],
     "confidence": [
       1,
       2,
-      1,
-      2,
-      1,
-      1,
-      1,
-      1,
       2,
       2,
       1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
       2
     ],
-    "identity_summary": "Crystal Palace is a south London club. Selhurst Park noise is clearer than a locked football idea.",
+    "identity_summary": "South London noise that will turn on another club's owner and on its own commercial deal.",
     "kit_family": "red",
     "exclusion_clubs": [
       "brighton"
@@ -4624,7 +4624,7 @@
       4,
       6,
       6,
-      4,
+      5,
       6
     ],
     "confidence": [
@@ -4632,16 +4632,16 @@
       1,
       2,
       2,
-      1,
+      2,
       1,
       1,
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Florence's purple club, civic and stubborn, rebuilt after bankruptcy without becoming a trophy machine.",
+    "identity_summary": "Florence's purple club. Civic and stubborn, including when the club sells what the city loved.",
     "kit_family": "purple",
     "exclusion_clubs": [
       "juventus",
@@ -4725,7 +4725,7 @@
       4,
       6,
       6,
-      4,
+      5,
       5
     ],
     "confidence": [
@@ -4739,10 +4739,10 @@
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Fulham is a west London club by the Thames. Craven Cottage is the identity.",
+    "identity_summary": "West London by the Thames. The Cottage is heritage, and the crowd will march over prices.",
     "kit_family": "white",
     "exclusion_clubs": [
       "chelsea"
@@ -5362,32 +5362,32 @@
     "vector": [
       4,
       4,
-      4,
-      4,
+      5,
+      6,
       4,
       4,
       4,
       4,
       6,
-      4,
-      4,
-      4
+      5,
+      5,
+      6
     ],
     "confidence": [
       1,
       1,
-      1,
-      1,
+      2,
+      2,
       1,
       1,
       1,
       1,
       2,
-      1,
-      1,
-      1
+      2,
+      2,
+      2
     ],
-    "identity_summary": "Hull's civic club, the Tigers. The city and the amber shirt are the identity.",
+    "identity_summary": "Hull's people fought the name, the concessions, and the board. The town is not a decoration.",
     "kit_family": "yellow",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -6111,7 +6111,7 @@
       4,
       6,
       2,
-      5,
+      6,
       5,
       5,
       4,
@@ -6135,7 +6135,7 @@
       3,
       3
     ],
-    "identity_summary": "A city's emotional language, sung before kickoff and carried a long way from home.",
+    "identity_summary": "A city's emotional language, sung before kickoff, and a crowd that will walk out on its own club.",
     "kit_family": "red",
     "exclusion_clubs": [
       "everton",
@@ -6319,13 +6319,13 @@
       4,
       6,
       4,
-      4,
-      4
+      5,
+      5
     ],
     "confidence": [
       1,
       1,
-      1,
+      2,
       1,
       1,
       1,
@@ -6333,10 +6333,10 @@
       1,
       2,
       1,
-      1,
-      1
+      2,
+      2
     ],
-    "identity_summary": "Mainz's carnival-city club. Civic first, without a locked playing idea across eras.",
+    "identity_summary": "Mainz's carnival-city club. Civic, and present in the fight to keep member football.",
     "kit_family": "red",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -6411,12 +6411,12 @@
       3,
       3,
       2,
-      6,
+      5,
       4,
       3,
-      7,
+      4,
       3,
-      3,
+      2,
       2,
       3
     ],
@@ -6434,7 +6434,7 @@
       3,
       3
     ],
-    "identity_summary": "A single idea executed to the last centimetre, with the resources to keep executing it.",
+    "identity_summary": "A modern project built to win. The crowd chose that project, then argued about tickets.",
     "kit_family": "blue",
     "exclusion_clubs": [
       "manchester-united"
@@ -6458,18 +6458,18 @@
     "tier": "A",
     "competition": null,
     "vector": [
-      2,
+      4,
       5,
       1,
+      5,
+      4,
+      4,
+      5,
+      4,
       3,
-      5,
-      5,
       6,
       4,
-      4,
-      6,
-      2,
-      4
+      5
     ],
     "confidence": [
       3,
@@ -6485,7 +6485,7 @@
       3,
       3
     ],
-    "identity_summary": "Youth, comebacks and scale, a club that became a global habit.",
+    "identity_summary": "A global club whose match-going people have spent years fighting the owners, not only the table.",
     "kit_family": "red",
     "exclusion_clubs": [
       "manchester-city",
@@ -7014,7 +7014,7 @@
       3,
       7,
       6,
-      4,
+      3,
       6
     ],
     "confidence": [
@@ -7031,7 +7031,7 @@
       3,
       3
     ],
-    "identity_summary": "One city, one club, and a crowd that turns up whatever the table says.",
+    "identity_summary": "One city, one club. The crowd stayed through the dark, then chose the power that ended it.",
     "kit_family": "black",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -7114,7 +7114,7 @@
       4,
       6,
       6,
-      4,
+      5,
       5
     ],
     "confidence": [
@@ -7128,10 +7128,10 @@
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Nottingham Forest is a civic Midlands club whose European nights and long wait still shape the identity.",
+    "identity_summary": "A civic Midlands club. European nights are heritage, and the trust still fights the prices.",
     "kit_family": "red",
     "exclusion_clubs": [
       "derby-county"
@@ -8149,14 +8149,14 @@
       4,
       4,
       5,
-      5,
+      6,
       4,
       4,
       4,
       4,
       7,
       6,
-      4,
+      6,
       6
     ],
     "confidence": [
@@ -8170,10 +8170,10 @@
       1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Alsace first. A border-city club whose identity is the region, not a capital.",
+    "identity_summary": "Alsace first. They kept the silence and the banners after the new owners started winning.",
     "kit_family": "blue",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -8857,7 +8857,7 @@
       5,
       6,
       4,
-      4,
+      5,
       6
     ],
     "confidence": [
@@ -8871,10 +8871,10 @@
       2,
       2,
       1,
-      1,
+      2,
       2
     ],
-    "identity_summary": "A development club that built a football school to stay in the Bundesliga without buying the table.",
+    "identity_summary": "A member development club that stood with the league-wide fight against outside investors.",
     "kit_family": "red",
     "exclusion_clubs": [],
     "badge_url": null,
@@ -9939,18 +9939,18 @@
     "tier": "A",
     "competition": null,
     "vector": [
-      6,
-      6,
+      3,
+      4,
+      3,
+      3,
+      4,
       4,
       5,
-      5,
-      5,
-      5,
       4,
-      5,
-      5,
       4,
-      5
+      3,
+      3,
+      4
     ],
     "confidence": [
       3,
@@ -9966,7 +9966,7 @@
       3,
       3
     ],
-    "identity_summary": "Ambition and heartbreak in the same shirt, year after year, told with dark humour.",
+    "identity_summary": "North London ambition. They want to win now, not to be known for almost winning.",
     "kit_family": "white",
     "exclusion_clubs": [
       "arsenal"
@@ -10382,20 +10382,21 @@
     "tier": "B",
     "competition": "LaLiga",
     "vector": [
-      4,
-      4,
-      3,
-      4,
-      4,
-      4,
-      4,
-      4,
       5,
+      4,
+      4,
       6,
       4,
-      5
+      4,
+      4,
+      4,
+      6,
+      6,
+      6,
+      6
     ],
     "confidence": [
+      2,
       1,
       1,
       2,
@@ -10403,13 +10404,12 @@
       1,
       1,
       1,
-      1,
       2,
       2,
-      1,
+      2,
       2
     ],
-    "identity_summary": "Valencia's giant: Mestalla, the bat, a city club that once expected Europe as normal.",
+    "identity_summary": "Mestalla people who stood outside their own ground for years rather than accept the owner.",
     "kit_family": "white",
     "exclusion_clubs": [
       "levante"
